@@ -1,0 +1,31 @@
+name: Compile LaTeX (main.tex only)
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/being24/latex-docker:latest  # 日本語対応LaTeXイメージ
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Compile only main.tex
+        run: |
+          echo "Compile LaTeX with latexmk (uplatex + dvipdfmx)"
+          latexmk -pdfdvi -interaction=nonstopmode -shell-escape main.tex
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: main-pdf
+          path: main.pdf
