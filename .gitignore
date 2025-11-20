@@ -27,6 +27,7 @@
 *.fls
 *.bcf
 *.xml
+main.pdf
 
 # Ignore node_modules
 node_modules/
@@ -41,3 +42,6 @@ __latexindent_temp.tex
 
 __*.tex
 *SAVE-ERROR
+
+# Ignore generated svg-inkscape artifacts (EPS, _tex files, etc.)
+svg-inkscape/

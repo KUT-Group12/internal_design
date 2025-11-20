@@ -1,18 +1,8 @@
 # textlintでの文法チェックのワークフロー
 name: Lint
 
-# Reviewdogでの指摘を有効に使うため、pull requestでのみ有効
 on:
-  pull_request:
-    # Pull Requestかつ
-    # 以下のファイルに変更があった場合、このWorkflowを実行
-    paths:
-      - "prh.yml"
-      - ".textlintrc"
-      - "package.json"
-      - "package-lock.json"
-      - ".github/workflows/lint.yaml"
-      - "**.tex"
+  workflow_dispatch:  
 
 jobs:
   lint:

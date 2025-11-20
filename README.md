@@ -1,11 +1,14 @@
 # コンパイル方法
 ## 方法1
-`latexmk -pdfdvi -shell-escape main.tex`
+```
+latexmk -pdfdvi -shell-escape main.tex
+```
 コンパイル1回でラベルの参照まで可能
 ## 方法２
-1. `uplatex -pdfdvi -shell-escape main.tex`
-2. `dvipdfmx main.dvi`
-ラベルの参照解決には1を2回する必要あり
+```
+uplatex -pdfdvi -shell-escape main.tex
+dvipdfmx main.dvi
+```
 
 # 日本語論文をLaTeXで書いて、textlintをするためのテンプレート
 
