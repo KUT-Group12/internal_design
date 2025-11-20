@@ -1,5 +1,4 @@
 # コンパイル方法
-
 ## 方法1
 ```
 latexmk -pdfdvi -shell-escape main.tex
@@ -16,6 +15,16 @@ dvipdfmx main.dvi
 # ファイル構成
 - `sections/` : `.tex`など文書ファイルを入れる
 - `figures/` : `.pdf`, `.svg`など画像ファイルを入れる
+**画像や`tex`ファイルは章や担当箇所ごとにディレクトリに格納し，それが何のファイルなのかをわかるような名前をつけてください**
+```
+section<章番号>_<内容>.tex
+section<章番号>_<画像の簡単な説明>.pdf
+
+例1 : はじめにの章を記述する場合
+    section1_intro.tex
+例2 : 一般会員の新規会員登録時の利用者状況の格納するモジュール構成図
+    section6_memberInfo_gene.pdf
+```
 
 # 日本語論文をLaTeXで書いて、textlintをするためのテンプレート
 
