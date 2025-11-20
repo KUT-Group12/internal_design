@@ -7,8 +7,14 @@ latexmk -pdfdvi -shell-escape main.tex
 ## 方法２
 ```
 uplatex -pdfdvi -shell-escape main.tex
+```
+```
 dvipdfmx main.dvi
 ```
+
+# ファイル構成
+- `sections/` : `.tex`など文書ファイルを入れる
+- `figures/` : `.pdf`, `.svg`など画像ファイルを入れる
 
 # 日本語論文をLaTeXで書いて、textlintをするためのテンプレート
 
