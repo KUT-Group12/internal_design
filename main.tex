@@ -1,22 +1,33 @@
-\documentclass{classes/report}
+\documentclass[dvipdfmx]{jlreq}
+
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{float}
+\usepackage{svg}
 
 \begin{document}
 
-\pagenumbering{roman}
-\subfile{sections/title}
+\input{sections/title}
 \newpage
 
 \tableofcontents
 \clearpage
 
-\pagenumbering{arabic}
+% はじめに
 
-\subfile{sections/abstract}
-\newpage
+% システム概要
 
-\subfile{sections/main_issue}
-\newpage
+% コーディング規約
 
-\subfile{sections/references}
+% 動作環境
+
+% 開発環境
+
+% モジュール設計
+% フロントエンド
+
+% バックエンド
+
+% データベース設計
 
 \end{document}
