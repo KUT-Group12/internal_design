@@ -46,11 +46,11 @@
                     & M1-17-2 & UserInputReportInformation & 通報内容を格納する \\ \cline{2-4}
                     & M1-18-1 & UserDeletePinScreen & 投稿削除を反映する \\ \cline{2-4}
                     & M1-18-2 & UserDeletePinDetail & 投稿内容を削除する \\ \cline{2-4}
-                    & M1-19-1 & InputReactionInformation & リアクション情報を格納する \\ \cline{2-4}
-                    & M1-19-2 & ReactionScreen & リアクションを反映させる \\ \cline{2-4}
-                    & M1-20 & GetReactionList & 自分がリアクションした投稿を取得する \\ \cline{2-4}
-                    & M1-21 & InputBussinessRequestInformation & 事業者申請情報を格納 \\ \hline
-            事業者会員 & M2-1-1 & BussinessLoginScreen & 利用規約に同意してGoogle認証にアクセスする \\ \cline{2-4}
+                    & M1-19-1 & UserInputReactionInformation & リアクション情報を格納する \\ \cline{2-4}
+                    & M1-19-2 & UserReactionScreen & リアクションを反映させる \\ \cline{2-4}
+                    & M1-20 & UserGetReactionList & 自分がリアクションした投稿を取得する \\ \cline{2-4}
+                    & M1-21 & InputBusinessRequestInformation & 事業者申請情報を格納 \\ \hline
+            事業者会員 & M2-1-1 & BusinessLoginScreen & 利用規約に同意してGoogle認証にアクセスする \\ \cline{2-4}
                     & M2-1-2 & BusinessInputInformation & DBに利用者情報を格納する \\ \cline{2-4}
                     & M2-2 & BusinessLogin & DBから会員情報を取得してログインする \\ \cline{2-4}
                     & M2-3-1 & BusinessLogoutScreen & ログアウト画面を表示する \\ \cline{2-4}
@@ -100,9 +100,9 @@
                   & M3-4-3 & AdminGetTotalPostNumber & 総投稿数を取得する \\ \cline{2-4}
                   & M3-4-4 & AdminGetTotalReactionNumber & 総リアクション数を取得する \\ \cline{2-4}
                   & M3-4-5 & AdminGetBusinessAccountNumber & 事業者アカウント数を取得する \\ \cline{2-4}
-                  & M3-4-6 & AdminGetNotRepostNumber & 未処理通報数を取得する \\ \cline{2-4}
+                  & M3-4-6 & AdminGetNotReportNumber & 未処理通報数を取得する \\ \cline{2-4}
                   & M3-4-7 & AdminDashboardScreen & 管理者ダッシュボード画面を表示する \\ \cline{2-4}
-                  & M3-4-8 & AdminDashBoardGraphScreen & 週間アクティビティ推移とジャンル別投稿をグラフで表示する \\ \cline{2-4}
+                  & M3-4-8 & AdminDashboardGraphScreen & 週間アクティビティ推移とジャンル別投稿をグラフで表示する \\ \cline{2-4}
                   & M3-5-1 & ProcessReportDeletePinDetail & 通報を処理して投稿を削除する \\ \cline{2-4}
                   & M3-5-2 & ProcessReportScreen & 通報を「処理済み」にする \\ \cline{2-4}
                   & M3-6-1 & InputBusinessInformation & 事業者情報を格納する \\ \cline{2-4}
@@ -110,7 +110,7 @@
                   & M3-7-1 & AdminDeletePost & 投稿内容を削除する \\ \cline{2-4}
                   & M3-7-2 & SendUserMessage & 利用者に通知を送信する \\ \cline{2-4}
                   & M3-8 & AdminDeleteAccount & アカウントを削除する \\ \cline{2-4}
-                  & M3-9-1 & ProcessContact & 問い合わせに対応して「対応済みにする」 \\ \cline{2-4}
+                  & M3-9-1 & ProcessContact & 問い合わせに対応して「対応済み」にする \\ \cline{2-4}
                   & M3-9-2 & SendUserMailContact & 問い合わせに対する回答をメールで送信する \\ \cline{2-4}
                   & M3-9-3 & ProcessContactScreen & 対応した問い合わせを反映する \\ \hline
     \end{longtable}
