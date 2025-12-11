@@ -1,0 +1,14 @@
+digraph G {
+    #include "style.doth"
+
+    branch[label = "ログアウトを選択"]
+    no[label = "ログアウト画面へ遷移する前の画面へ遷移"]
+    yes[label = "セッション情報の無効化"]
+    login[label = "AdminLoginScreenに移行"]
+
+
+    branch -> no [label = "No"]
+    branch -> yes [label = "Yes"]
+    yes -> login
+
+}
