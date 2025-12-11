@@ -1,0 +1,116 @@
+本システムのモジュール一覧を表\ref{tab:modulelist}に示す．モジュールIDはM(利用者:1，事業者:2，管理者:3)-(各機能の番号)-(もし，同じ機能で分けられているモジュールがあるならば，仕様順番の番号)となっている．
+
+\begin{longtable}{|c|c|c|>{\hspace{0pt}\centering\arraybackslash}p{5cm}|}
+    \caption{モジュール一覧}
+    \label{tab:modulelist} \\ 
+    
+    \hline
+    \endhead
+    
+    \hline
+    \endfoot
+    
+    \hline
+    \endlastfoot
+    
+    \hline
+                    & モジュールID & モジュール名 & 概要 \\ \hline
+            一般会員 & M1-1-1 & UserLoginScreen & 利用規約に同意してGoogle認証にアクセスする \\ \cline{2-4}
+                    & M1-1-2 & UserInputInformation & DBに利用者情報を格納する \\ \cline{2-4}
+                    & M1-2 & UserLogin & DBから会員情報を取得してログインする \\ \cline{2-4}
+                    & M1-3-1 & UserLogoutScreen & ログアウト画面を表示する \\ \cline{2-4}
+                    & M1-3-2 & UserLogout & ログアウトする \\ \cline{2-4}
+                    & M1-4-1 & UserDeleteScreen & 退会画面を表示する \\ \cline{2-4}
+                    & M1-4-2 & UserDeleteInformation & 会員情報を削除する \\ \cline{2-4}
+                    & M1-5-1 & UserContactScreen & お問い合わせ画面を表示する \\ \cline{2-4}
+                    & M1-5-2 & UserInputContactInformation & お問い合わせ内容を格納する \\ \cline{2-4}
+                    & M1-6-1 & UserMapViewScreen & 地図表示画面を表示する \\ \cline{2-4}
+                    & M1-6-2 & UserGetPostNumber & ピンに投稿されている数を取得する \\ \cline{2-4}
+                    & M1-7-1 & UserPinDetailScreen & ピンに投稿されている内容を表示する \\ \cline{2-4}
+                    & M1-7-2 & UserGetPinDetail & ピンに投稿されている内容を取得する \\ \cline{2-4}
+                    & M1-8-1 & UserPinPostScreen & 投稿をする画面を表示する \\ \cline{2-4}
+                    & M1-8-2 & UserGetLocation & 位置情報を地図上で指定する \\ \cline{2-4}
+                    & M1-8-3 & UserNameSearch & 事業者名検索をする \\ \cline{2-4}
+                    & M1-8-4 & UserGetDate & 投稿した日時を取得する \\ \cline{2-4}
+                    & M1-8-5 & UserInputPinDetail & 投稿内容を格納する \\ \cline{2-4}
+                    & M1-9 & KeywordSearch & キーワード検索をする \\ \cline{2-4}
+                    & M1-10 & GenreSearch & ジャンル検索をする \\ \cline{2-4}
+                    & M1-11 & DateSearch & 投稿の期間で絞り込む \\ \cline{2-4}
+                    & M1-12 & SortDate & 投稿を新着順に並べる \\ \cline{2-4}
+                    & M1-13 & SortReaction & 投稿をリアクション順に並べる \\ \cline{2-4}
+                    & M1-14 & SortDistance & 投稿を距離順に並べる \\ \cline{2-4}
+                    & M1-15 & UserInputBlockInformation & ブロック情報を格納する \\ \cline{2-4}
+                    & M1-16-1 & UserDeleteBlockInformation & ブロック情報を削除する \\ \cline{2-4}
+                    & M1-16-2 & UserDeleteBlockScreen & ブロックリストから解除を反映する \\ \cline{2-4}
+                    & M1-17-1 & UserReportScreen & 通報画面を表示する \\ \cline{2-4}
+                    & M1-17-2 & UserInputReportInformation & 通報内容を格納する \\ \cline{2-4}
+                    & M1-18-1 & UserDeletePinScreen & 投稿削除を反映する \\ \cline{2-4}
+                    & M1-18-2 & UserDeletePinDetail & 投稿内容を削除する \\ \cline{2-4}
+                    & M1-19-1 & UserInputReactionInformation & リアクション情報を格納する \\ \cline{2-4}
+                    & M1-19-2 & UserReactionScreen & リアクションを反映させる \\ \cline{2-4}
+                    & M1-20 & UserGetReactionList & 自分がリアクションした投稿を取得する \\ \cline{2-4}
+                    & M1-21 & InputBusinessRequestInformation & 事業者申請情報を格納 \\ \hline
+            事業者会員 & M2-1-1 & BusinessLoginScreen & 利用規約に同意してGoogle認証にアクセスする \\ \cline{2-4}
+                    & M2-1-2 & BusinessInputInformation & DBに利用者情報を格納する \\ \cline{2-4}
+                    & M2-2 & BusinessLogin & DBから会員情報を取得してログインする \\ \cline{2-4}
+                    & M2-3-1 & BusinessLogoutScreen & ログアウト画面を表示する \\ \cline{2-4}
+                    & M2-3-2 & BusinessLogout & ログアウトする \\ \cline{2-4}
+                    & M2-4-1 & BusinessDeleteScreen & 退会画面を表示する \\ \cline{2-4}
+                    & M2-4-2 & BusinessDeleteInformation & 会員情報を削除する \\ \cline{2-4}
+                    & M2-5-1 & BusinessContactScreen & お問い合わせ画面を表示する \\ \cline{2-4}
+                    & M2-5-2 & BusinessInputContactInformation & お問い合わせ内容を格納する \\ \cline{2-4}
+                    & M2-6-1 & BusinessMapViewScreen & 地図表示画面を表示する \\ \cline{2-4}
+                    & M2-6-2 & BusinessGetPostNumber & ピンに投稿されている数を取得する \\ \cline{2-4}
+                    & M2-7-1 & BusinessPinDetailScreen & ピンに投稿されている内容を表示する \\ \cline{2-4}
+                    & M2-7-2 & BusinessGetPinDetail & ピンに投稿されている内容を取得する \\ \cline{2-4}
+                    & M2-8-1 & BusinessPinPostScreen & 投稿をする画面を表示する \\ \cline{2-4}
+                    & M2-8-2 & BusinessGetLocation & 位置情報を地図上で指定する \\ \cline{2-4}
+                    & M2-8-3 & BusinessNameSearch & 事業者名検索をする \\ \cline{2-4}
+                    & M2-8-4 & BusinessGetDate & 投稿した日時を取得する \\ \cline{2-4}
+                    & M2-8-5 & BusinessInputPinDetail & 投稿内容を格納する \\ \cline{2-4}
+                    & M2-9 & BusinessInputBlockInformation & ブロック情報を格納する \\ \cline{2-4}
+                    & M2-10-1 & BusinessDeleteBlockInformation & ブロック情報を削除する \\ \cline{2-4}
+                    & M2-10-2 & BusinessDeleteBlockScreen & ブロックリストから解除を反映する \\ \cline{2-4}
+                    & M2-11-1 & BusinessReportScreen & 通報画面を表示する \\ \cline{2-4}
+                    & M2-11-2 & BusinessInputReportInformation & 通報内容を格納する \\ \cline{2-4}
+                    & M2-12-1 & BusinessDeletePinScreen & 投稿削除を反映する \\ \cline{2-4}
+                    & M2-12-2 & BusinessDeletePinDetail & 投稿内容を削除する \\ \cline{2-4}
+                    & M2-13-1 & ChangeBusinessNameScreen & 事業者名の変更を反映する \\ \cline{2-4}
+                    & M2-13-2 & InputChangeBusinessName & 変更した事業者名を格納する \\ \cline{2-4}
+                    & M2-14-1 & ChangeBusinessIconScreen & 事業者アイコンの変更を反映する \\ \cline{2-4}
+                    & M2-14-2 & InputChangeBusinessIcon & 変更した事業者アイコンを格納する \\ \cline{2-4}
+                    & M2-15-1 & PayInformationScreen & 支払い画面を表示する \\ \cline{2-4}
+                    & M2-15-2 & InputPayInformation & 支払い情報を格納する \\ \cline{2-4}
+                    & M2-16-1 & GetPayInformation & 支払い情報を取得する \\ \cline{2-4}
+                    & M2-16-2 & PayInformationListScreen & 支払い情報を表示する \\ \cline{2-4}
+                    & M2-17-1 & BusinessGetTotalPostNumber & 総投稿数を取得する \\ \cline{2-4}
+                    & M2-17-2 & BusinessGetTotalReactionNumber & 総リアクション数を取得する \\ \cline{2-4}
+                    & M2-17-3 & BusinessGetTotalViewNumber & 総閲覧数を取得する \\ \cline{2-4}
+                    & M2-17-4 & BusinessGetEngagement & エンゲージメント率を計算する \\ \cline{2-4}
+                    & M2-17-5 & BusinessDashboardScreen & ダッシュボード画面を表示する \\ \cline{2-4}
+                    & M2-17-6 & BusinessDashboardGraphScreen & 週間推移とジャンル別投稿数をグラフで表示する \\ \cline{2-4}
+                    & M2-17-7 & BusinessFavoritePostTop5 & リアクション数が多い投稿5つを表示する \\ \hline
+            管理者 & M3-1-1 & AdminLoginScreen & 利用規約に同意してGoogle認証にアクセスする \\ \cline{2-4}
+                  & M3-1-2 & AdminInputInformation & DBに利用者情報を格納する \\ \cline{2-4}
+                  & M3-2 & AdminLogin & DBから会員情報を取得してログインする \\ \cline{2-4}
+                  & M3-3-1 & AdminLogoutScreen & ログアウト画面を表示する \\ \cline{2-4}
+                  & M3-3-2 & AdminLogout & ログアウトする \\ \cline{2-4}
+                  & M3-4-1 & AdminGetTotalUserNumber & 総ユーザー数を取得する \\ \cline{2-4}
+                  & M3-4-2 & AdminGetActiveUserNumber & アクティブユーザー数を取得する \\ \cline{2-4}
+                  & M3-4-3 & AdminGetTotalPostNumber & 総投稿数を取得する \\ \cline{2-4}
+                  & M3-4-4 & AdminGetTotalReactionNumber & 総リアクション数を取得する \\ \cline{2-4}
+                  & M3-4-5 & AdminGetBusinessAccountNumber & 事業者アカウント数を取得する \\ \cline{2-4}
+                  & M3-4-6 & AdminGetNotReportNumber & 未処理通報数を取得する \\ \cline{2-4}
+                  & M3-4-7 & AdminDashboardScreen & 管理者ダッシュボード画面を表示する \\ \cline{2-4}
+                  & M3-4-8 & AdminDashboardGraphScreen & 週間アクティビティ推移とジャンル別投稿をグラフで表示する \\ \cline{2-4}
+                  & M3-5-1 & ProcessReportDeletePinDetail & 通報を処理して投稿を削除する \\ \cline{2-4}
+                  & M3-5-2 & ProcessReportScreen & 通報を「処理済み」にする \\ \cline{2-4}
+                  & M3-6-1 & InputBusinessInformation & 事業者情報を格納する \\ \cline{2-4}
+                  & M3-6-2 & ProcessBusinessRequestScreen & 対応した事業者申請を反映させる \\ \cline{2-4}
+                  & M3-7-1 & AdminDeletePost & 投稿内容を削除する \\ \cline{2-4}
+                  & M3-7-2 & SendUserMessage & 利用者に通知を送信する \\ \cline{2-4}
+                  & M3-8 & AdminDeleteAccount & アカウントを削除する \\ \cline{2-4}
+                  & M3-9-1 & ProcessContact & 問い合わせに対応して「対応済み」にする \\ \cline{2-4}
+                  & M3-9-2 & SendUserMailContact & 問い合わせに対する回答をメールで送信する \\ \cline{2-4}
+                  & M3-9-3 & ProcessContactScreen & 対応した問い合わせを反映する \\ \hline
+    \end{longtable}
