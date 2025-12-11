@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    db[label = "dbにアクセス"]
+    result[label = "事業者アカウントの総閲覧数を取得"]
+
+    db -> result
+}
