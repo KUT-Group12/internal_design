@@ -19,6 +19,10 @@ digraph G {
 }
 ```
 
+## フォントについて
+フォントに関して，統一させたいため以下のフォントをダウンロードして活用してください．
+https://fonts.google.com/specimen/RocknRoll+One
+
 ## コンパイル方法について
 ```dot:
 #include "style.doth"
