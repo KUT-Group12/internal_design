@@ -1,0 +1,19 @@
+digraph G {
+    #include "style.doth"
+
+    input[label = "通報理由を入力"]
+    serect[label = "「通報する」を選択"]
+    check[label = "通報理由が入力されている", shape = diamond]
+    no[label = "「通報理由を入力してください」と表示"]
+    db[label = "DBにアクセス"]
+    store[label = "通報内容を格納"]
+    display[label = "「通報を受け付けました。運営が確認いたします。」を表示"]
+
+    input -> serect
+    serect -> check
+    check -> no [label = "NO"]
+    no -> input
+    check -> db [label = "YES"]
+    db -> store
+    store -> display
+}

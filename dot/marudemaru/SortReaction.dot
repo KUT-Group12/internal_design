@@ -1,0 +1,12 @@
+digraph G {
+    #include "style.doth"
+
+    serect[label = "並び替えの「リアクション数順」を選択"]
+    db[label = "DBにアクセス"]
+    get[label = "投稿内容を取得"]
+    output[label = "投稿内容をリアクション数順に並び替える"]
+
+    serect -> db
+    db -> get
+    get -> output
+}
