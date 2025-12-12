@@ -1,0 +1,12 @@
+digraph G {
+    #include "style.doth"
+
+    input[label = "投稿内容を入力"]
+    serect[label = "「事業者名検索」を選択"]
+    position[label = "DBから位置を取得"]
+    position_input[label = "緯度と経度の項目を入力"]
+
+    input -> serect
+    serect -> position
+    position -> position_input
+}
