@@ -8,7 +8,7 @@ digraph G {
     store[label = "ブロック情報の格納"]
     output[label = "「ユーザーをブロックしました」の表示"]
     map[label = "UserMapViewScreenに移行"]
-    view[label = "UserPostViewScreenに移行"]
+    view[label = "UserPinDetailScreenに移行"]
 
     serect -> display
     display -> ok

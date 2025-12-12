@@ -54,8 +54,8 @@
 <!-- view -->
 <g id="node8" class="node">
 <title>view</title>
-<polygon fill="none" stroke="black" points="481,-36 286,-36 286,0 481,0 481,-36"/>
-<text text-anchor="middle" x="383.5" y="-14.3" font-family="RocknRoll One" font-size="14.00">UserPostViewScreenに移行</text>
+<polygon fill="none" stroke="black" points="481.5,-36 285.5,-36 285.5,0 481.5,0 481.5,-36"/>
+<text text-anchor="middle" x="383.5" y="-14.3" font-family="RocknRoll One" font-size="14.00">UserPinDetailScreenに移行</text>
 </g>
 <!-- ok&#45;&gt;view -->
 <g id="edge4" class="edge">
