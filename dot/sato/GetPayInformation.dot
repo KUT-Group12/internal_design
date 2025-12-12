@@ -1,0 +1,10 @@
+digraph G {
+    #include "style.doth"
+
+    webhook[label = "webhookから支払情報を取得"]
+    db[label = "支払いステータス更新"]
+    result[label = "PayInformationListScreenに移行"]
+
+    webhook -> db
+    db -> result
+}

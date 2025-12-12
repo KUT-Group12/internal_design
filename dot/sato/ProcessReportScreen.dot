@@ -1,0 +1,7 @@
+digraph G {
+    #include "style.doth"
+
+    db[label = "対応する通報idの対応済みフラグをOnにする"]
+
+    db
+}

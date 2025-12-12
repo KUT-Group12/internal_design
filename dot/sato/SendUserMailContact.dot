@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    get[label = "該当の問い合わせIDと送信する文章を取得"]
+    send[label = "問い合わせユーザーIDにメールを送信"]
+
+    get -> send
+}

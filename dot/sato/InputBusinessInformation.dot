@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    get[label = "事業者会員情報を取得"]
+    db[label = "事業者会員情報を格納"]
+    
+    get -> db
+}
