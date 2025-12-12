@@ -1,26 +1,18 @@
 digraph G {
     #include "style.doth"
 
-    serect[label = "「投稿履歴」を選択"]
-    db1[label = "DBにアクセス"]
-    get[label = "投稿内容を取得"]
-    display[label = "投稿履歴を表示"]
     trash[label = "ゴミ箱マークを選択"]
     trash_display[label = "削除確認画面を表示"]
     ok[label = "「OK」を選択", shape = diamond]
     no[label = "UserMyPageScreenに移行"]
-    db2[label = "DBにアクセス"]
+    db[label = "DBにアクセス"]
     delete[label = "投稿内容を削除"]
     delete_display[label = "「投稿を削除しました」と表示"]
 
-    serect -> db1
-    db1 -> get
-    get -> display
-    display -> trash
     trash -> trash_display
     trash_display -> ok
     ok -> no [label = "NO"]
-    ok -> db2 [label = "YES"]
-    db2 -> delete
+    ok -> db [label = "YES"]
+    db -> delete
     delete -> delete_display
 }

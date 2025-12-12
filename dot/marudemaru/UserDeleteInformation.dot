@@ -11,7 +11,7 @@ digraph G {
 
     input -> withdrawal_no[label = "NO"]
     input -> withdrawal_yes[label = "YES"]
-    withdrawal_yes　-> ok
+    withdrawal_yes -> ok
     ok -> confirmation_no[label = "NO"]
     ok -> confirmation_yes[label = "YES"]
     confirmation_yes -> login
