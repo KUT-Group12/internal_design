@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    db[label = "DBにアクセス"]
+    get[label = "ピンに投稿されている内容を取得"]
+
+    db -> get
+}

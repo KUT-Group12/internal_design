@@ -2,11 +2,19 @@ digraph G {
     #include "style.doth"
 
     input[label = "投稿内容を入力"]
-    serect[label = "「事業者名検索」を選択"]
-    position[label = "DBから位置を取得"]
-    position_input[label = "緯度と経度の項目を入力"]
+    serect[label = "「事業者名検索」をに事業者名を入力"]
+    serch[label = "事業者情報を検索"]
+    check[label = "入力された事業者名の有無を確認"]
+    existence[label = "検索した事業者名が存在する", shape = diamond]
+    no[label = "「その事業者は存在しません」と表示"]
+    yes[label = "緯度と経度の項目を入力"]
 
     input -> serect
-    serect -> position
-    position -> position_input
+    serect -> serch
+    serch -> check
+    check -> existence
+    existence -> no [label = "NO"]
+    no -> serect
+    existence -> yes [label = "YES"]
+
 }

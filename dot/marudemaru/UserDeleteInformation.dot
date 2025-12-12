@@ -3,7 +3,7 @@ digraph G {
 
     input[label = "退会理由(任意)を記入，削除確認項目にすべてチェック，アカウントを削除するを選択", shape = diamond]
     withdrawal_no[label = "UserMyPageScreenに移行"]
-    withdrawal_yes[label = "「本当にアカウントを削除してもよろしいですか？この操作は取り消せません。を表示"]
+    withdrawal_yes[label = "「本当にアカウントを削除してもよろしいですか？この操作は取り消せません。」を表示"]
     ok[label = "「OK」をクリック"]
     confirmation_no[label = "UserDeleteScreenに移行"]
     confirmation_yes[label = "会員情報を削除", shape = diamond]
