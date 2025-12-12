@@ -1,0 +1,21 @@
+digraph G {
+    #include "style.doth"
+
+    select[label = "「ブロック」を選択する"]
+    display[label = "「このユーザーをブロックしますか？ブロックすると相手の投稿が表示されなくなります。」を表示"]
+    yes[label = "「OK」を選択", shape = diamond]
+    db[label = "DBにアクセス"]
+    store[label = "ブロック情報の格納"]
+    output[label = "「ユーザーをブロックしました」を表示"]
+    map[label = "BusinessMapViewScreenに移行"]
+    view[label = "BusinessPinDetailScreenに移行"]
+
+    select -> display
+    display -> ok
+    yes -> db [label = "Yes"]
+    yes -> view [label = "No"]
+    db -> store
+    store -> output
+    output -> map
+    map -> view
+}

@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    input [label = "選択された画像データをDBに格納"]
+    view [label = "ChangeBusinessIconScreenに移行"]
+
+    input -> view
+}

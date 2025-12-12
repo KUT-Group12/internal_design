@@ -1,0 +1,14 @@
+digraph G {
+    #include "style.doth"
+
+    input[label = "リアクションを選択"]
+    db[label = "DBにアクセス"]
+    post[label = "リアクションされた投稿のリアクション数を取得"]
+    add[label = "リアクション数に+1をし，再び格納"]
+    ref[label = "UserReactionScreenに移行"]
+
+    input -> db
+    db -> post
+    post -> add
+    add -> ref
+}

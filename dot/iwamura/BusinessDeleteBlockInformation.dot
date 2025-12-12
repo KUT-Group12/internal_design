@@ -1,0 +1,12 @@
+digraph G {
+    #include "style.doth"
+
+    serect[label = "「ブロック解除」を選択"]
+    db[label = "DBにアクセスする"]
+    delete[label = "選択したユーザーIDを削除"]
+    view[label = "BusinessDeleteBlockScreenに移行"]
+
+    serect -> db
+    db -> delete
+    delete -> view
+}

@@ -1,0 +1,18 @@
+digraph G {
+    #include "style.doth"
+
+    input[label = "退会理由(任意)を記入，削除確認項目にすべてチェック，\nアカウントを削除するを確認", shape = diamond]
+    no[label = "BusinessMyPageScreenに移行"]
+    yes[label = "「本当にアカウントを削除してもよろしいですか？\nこの操作は取り消せません。」を表示"]
+    ok[label = "「OK」を選択", shape = diamond]
+    nook[label = "BusinessDeleteScreenに移行"]
+    yesok[label = "DBから会員情報を削除"]
+    login[label = "BusinessLoginScreenに移行"]
+
+    input -> no[label = "No"]
+    input -> yes[label = "Yes"]
+    yes -> ok
+    ok -> nook[label = "No"]
+    ok -> yesok[label = "Yes"]
+    yesok -> login
+}

@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    input [label = "件名とメッセージを取得"]
+    db [label = "DBに件名とメッセージを格納"]
+
+    input -> db
+}
