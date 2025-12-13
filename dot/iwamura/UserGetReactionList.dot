@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    db[label = "DBにアクセス"]
+    get[label = "一般会員自身がリアクションした投稿を取得"]
+
+    db -> get
+}

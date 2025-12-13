@@ -1,0 +1,14 @@
+digraph G {
+    #include "style.doth"
+
+    input [label = "入力された文字列を取得"]
+    serch [label = "事業者情報から入力された\n文字列が含まれる事業者を検索", shape = diamond]
+    no[label = "「その事業者は存在しません」と表示"]
+    yes [label = "取得された事業者の住所から\n緯度・経度を取得"]
+    view [label = "BusinessPinPostScreenに反映"]
+
+    input -> serch
+    serch -> no [label = "No"]
+    serch -> yes [label = "Yes"]
+    yes -> view
+}

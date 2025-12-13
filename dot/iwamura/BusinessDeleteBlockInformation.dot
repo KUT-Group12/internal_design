@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    delete[label = "DBから任意のブロック情報を削除"]
+    view[label = "BusinessDeleteBlockScreenに移行"]
+
+    delete -> view
+}

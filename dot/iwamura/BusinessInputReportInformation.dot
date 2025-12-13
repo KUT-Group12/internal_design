@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    store[label = "DBに通報内容を格納"]
+    view[label = "BusinessMapViewScreenに移行"]
+
+    store -> view
+}
