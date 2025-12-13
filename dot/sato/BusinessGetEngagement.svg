@@ -18,8 +18,8 @@
 <!-- calc -->
 <g id="node2" class="node">
 <title>calc</title>
-<polygon fill="none" stroke="black" points="250.38,-36 49.12,-36 49.12,0 250.38,0 250.38,-36"/>
-<text xml:space="preserve" text-anchor="middle" x="149.75" y="-15.2" font-family="RocknRoll One" font-size="14.00">総リアクション数 / 総閲覧数</text>
+<polygon fill="none" stroke="black" points="279.25,-36 20.25,-36 20.25,0 279.25,0 279.25,-36"/>
+<text xml:space="preserve" text-anchor="middle" x="149.75" y="-15.2" font-family="RocknRoll One" font-size="14.00">(総リアクション数 / 総閲覧数) を計算</text>
 </g>
 <!-- info&#45;&gt;calc -->
 <g id="edge1" class="edge">

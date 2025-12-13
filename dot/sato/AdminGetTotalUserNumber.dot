@@ -1,6 +1,6 @@
 digraph G {
     #include "style.doth"
-    db[label = "dbからカウント取得"]
+    db[label = "dbから総ユーザー数をカウント"]
     result[label = "総ユーザー数を返却"]
 
     db -> result

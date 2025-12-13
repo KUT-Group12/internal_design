@@ -2,8 +2,8 @@ digraph G {
     #include "style.doth"
 
     get[label = "該当の会員IDを取得"]
-    delete[label = "dbから会員IDに該当するユーザーを削除"]
+    delete[label = "DBから会員IDに該当するユーザーを削除"]
 
-    
+
     get -> delete
 }
