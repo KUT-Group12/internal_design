@@ -1,0 +1,9 @@
+digraph G {
+    #include "style.doth"
+
+    db[label = "DBにアクセス" ]
+    return[label = "リアクション数取得"]
+
+    db -> return
+
+}

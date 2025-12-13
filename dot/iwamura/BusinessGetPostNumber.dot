@@ -1,0 +1,9 @@
+digraph G {
+    #include "style.doth"
+
+    input [label = "DBからピンに投稿されている投稿数を取得"]
+    view [label = "BusinessMapViewScreenに移行"]
+
+    input -> view
+    
+}

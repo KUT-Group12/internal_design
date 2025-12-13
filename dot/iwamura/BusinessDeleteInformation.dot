@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    yesok[label = "DBから会員情報を削除"]
+    login[label = "BusinessLoginScreenに移行"]
+
+    yesok -> login
+}

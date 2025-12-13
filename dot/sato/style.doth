@@ -1,0 +1,16 @@
+    graph [
+        bgcolor = "transparent",
+        rankdir = "TB",
+        dpi=300
+    ]
+    node [
+        color = "black",
+        fontcolor = "black",
+        shape = "box",
+        fontname="RocknRoll One"
+    ];
+    edge [
+        color = "black",
+        fontcolor = "black";
+        fontname="RocknRoll One"
+    ];

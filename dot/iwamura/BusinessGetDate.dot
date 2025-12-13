@@ -1,0 +1,9 @@
+digraph G {
+    #include "style.doth"
+
+    
+    get[label = "投稿した日時を取得"]
+    view [label = "BusinessPinPostScreenに反映"]
+
+    get -> view
+}
