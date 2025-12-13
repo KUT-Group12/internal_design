@@ -17,5 +17,4 @@ digraph G {
     db -> store
     store -> output
     output -> map
-    map -> view
 }
