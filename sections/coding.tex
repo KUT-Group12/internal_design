@@ -1,0 +1,176 @@
+以下に本プロジェクトで採用するコーディング規約を示す．
+
+
+
+\subsection{HTML}
+以下に本システムに用いられたHTMLファイルに適用されるコーディング規約を示す．
+
+\subsubsection{命名規約}
+\begin{itemize}
+    \item ファイル名
+    \begin{itemize}
+        \item アッパーキャメルケース(例:CamelCase)表記を使用する
+        \item シンプルで内容を示す英単語で構成する
+    \end{itemize}    
+\end{itemize}
+
+\subsubsection{ドキュメント構造}
+全てのHTMLファイルは以下の構造に従う．
+
+\begin{verbatim}
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ページのタイトル</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- ページのコンテンツ -->
+
+        <script src="main.js"></script>
+    </body>
+</html>
+\end{verbatim}
+
+    \begin{itemize}
+        \item DOCTYPE 宣言を行う.
+        \item コメントアウトは「<!– コメントアウト –>」で書く
+        
+    \end{itemize}
+
+
+
+\subsection{CSS}
+以下に本システムに用いられたCSSファイルに適用されるコーディング規約を示す．
+
+\subsubsection{命名規約}
+\begin{itemize}
+    \item クラス名
+    \begin{itemize}
+        \item 役割が分かるように命名する
+        \item ケバブケース(小文字，ハイフン)表記を使用する
+    \end{itemize}  
+\end{itemize}  
+
+\subsubsection{インデント}
+\begin{itemize}
+        \item タブの仕様は禁止する
+        \item スペース2つで対応する
+\end{itemize} 
+
+\subsubsection{コメント規約}
+\begin{itemize}
+  \item セクションコメント
+    \begin{itemize}
+        \item ブロックコメントでセクション名を明記する
+        \item 上下に装飾戦を入れる
+   \end{itemize}  
+  \item 行コメント
+   \begin{itemize}
+    \item ブロックコメントで補足などを書く
+  
+  
+
+
+
+
+
+\subsection{Go}
+以下に本システムに用いられたGoファイルに適用されるコーディング規約を示す．
+
+\subsubsection{命名規約}
+\begin{itemize}
+    \item パッケージ名
+    \begin{itemize}
+        \item 小文字の単語で簡潔に表記する
+    \end{itemize}  
+    \item 関数名・構造体
+    \begin{itemize}
+       \item 外部に公開する場合，先頭を大文字にする
+       \item アッパーキャメルケースとキャメルケースを使い分ける
+       \item アンダースコアは使用しない
+    \end{itemize}  
+    \item インターフェイス名
+    \begin{itemize}
+        \item 単一メソッドインターフェイスは-er接尾辞を使用する
+    \end{itemize}  
+      
+\end{itemize}
+
+\subsubsection{インデント}
+\begin{itemize}
+        \item タブを使用する
+        \item 読みにくくなる長文は改行する
+        \item 演算子の前後には空白を入れる
+\end{itemize}   
+
+\subsubsection{エラーハンドリング}
+以下にエラーを返す関数を示す．
+\begin{verbatim}
+func readFile(name string) (string, error) {
+    data, err := os.ReadFile(name)
+    if err != nil {
+        return "", err
+    }
+    return string(data), nil
+}
+\end{verbatim}
+戻り値にerrorを返す．
+
+\subsubsection{コメント規約}
+\begin{itemize}
+        \item 公開要素には必ずコメントを書く
+        \item 関数名から書き始める
+\end{itemize}   
+
+\subsubsection{jsonタグ}
+\begin{itemize}
+  \item jsonタグは必ず明記する
+  \item スネークケース表記を使用する
+\end{itemize}  
+
+
+
+
+
+
+\subsection{Typescript}
+以下に本システムに用いられたTypescriptファイルに適用されるコーディング規約を示す．
+
+\subsubsection{命名規約}
+\begin{itemize}
+    \item ファイル名
+    \begin{itemize}
+        \item アッパーキャメルケース(例:CamelCase)表記を使用する
+        \item シンプルで内容を示す英単語で構成する
+    \end{itemize}   
+    \item 変数名
+    \begin{itemize}
+        \item アッパースネークケース(例:UPPER_SNAKE_CASE)表記を使用する
+    \end{itemize}   
+\end{itemize}
+
+\subsubsection{インデント}
+\begin{itemize}
+        \item タブの仕様は禁止する
+        \item スペース2つで対応する
+        \item 演算子の前後には空白を入れる
+        \item カンマ,if,forの後ろも同様に空白を入れる
+    \end{itemize}   
+
+\subsubsection{コメント規約}
+\begin{itemize}
+        \item (例://情報を初期化)のようになにをしているかを明記する
+    \end{itemize}   
+
+
+
+
+
+
+
+
+
+
