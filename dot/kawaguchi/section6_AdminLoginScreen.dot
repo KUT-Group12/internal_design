@@ -1,0 +1,11 @@
+digraph G {
+    #include "style.doth"
+
+    check[label = "利用規約のチェックボックスにチェックを入れる"]
+    choice[label = "「Googleでログイン」を選択"]
+    result[label ="UserInputInformationに移行"]
+
+    check -> choice
+    choice -> result
+
+}

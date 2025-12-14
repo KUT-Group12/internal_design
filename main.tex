@@ -44,6 +44,8 @@
 
 % 一般会員側モジュール
 \subsection{一般会員側モジュール}
+% モジュール間遷移図
+\input{sections/section6_usermoduletrans.tex}
 % M1-1-1
 \input{sections/user_front/section6_UserLoginScreen.tex}
 
@@ -82,6 +84,9 @@
 
 % 事業者側モジュール
 \subsection{事業者側モジュール}
+
+% モジュール間遷移図
+\input{sections/section6_businessmoduletrans.tex}
 % M2-1-2
 \input{sections/section6_iwamura/section6_BusinessInputInformation.tex}
 
@@ -113,7 +118,30 @@
 \input{sections/section6_iwamura/section6_InputPayInformation.tex}
 % 管理者側モジュール
 \subsection{管理者側モジュール}
+% モジュール間遷移図
+\input{sections/section6_adminmoduletrans.tex}
 
+% M3-1-1
+\input{sections/admin_front/section6_AdminLoginScreen.tex}
+
+
+% M3-3-7,8
+\input{sections/admin_front/section6_AdminDashboard.tex}
+
+
+
+% M3-4-2
+\input{sections/admin_front/section6_ProcessReport.tex}
+
+
+
+% M3-5-2
+\input{sections/admin_front/section6_ProcessBusinessRequestScreen.tex}
+
+
+
+% M3-8-3
+\input{sections/admin_front/section6_ProcessContactScreen.tex}
 
 % データベース設計
 \input{sections/section7_database.tex}
