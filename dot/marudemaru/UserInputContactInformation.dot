@@ -1,0 +1,17 @@
+digraph G {
+    #include "style.doth"
+
+    inquiry[label = "件名・メッセージ入力し，「送信する」を選択"]
+    subject[label = "件名が入力されている", shape = diamond]
+    message[label = "メッセージが入力されている", shape = diamond]
+    no[label = "必須入力が入力されていない旨を表示"]
+    db[label = "DBにアクセス"]
+    input[label = "件名・メッセージを格納"]
+
+    inquiry -> subject
+    subject -> message [label = "YES"]
+    subject -> no [label = "NO"]
+    message -> db [label = "YES"]
+    db -> input
+    message -> no [label = "NO"]
+}

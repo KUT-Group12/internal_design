@@ -1,0 +1,12 @@
+digraph G {
+    #include "style.doth"
+
+    input[label = "検索窓にキーワードを入力"]
+    db[label = "DBにアクセス"]
+    get[label = "キーワードを含む投稿を取得"]
+    output[label = "キーワードを含む投稿とピンのみを表示"]
+
+    input -> db
+    db -> get
+    get -> output
+}

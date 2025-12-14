@@ -1,0 +1,20 @@
+digraph G {
+    #include "style.doth"
+
+    auth[label = "Google認証にアクセス"]
+    info[label = "Googelから利用者情報を取得"]
+    exist[label = "DBにユーザーが存在するか", shape = diamond]
+    login[label = "ログイン処理"]
+    db[label = "DBにアクセス"]
+    save[label = "利用者情報を格納"]
+    result[label = "UserMapViewScreenに移行"]
+
+    auth -> info
+    info -> exist
+    exist -> login [label = "Yes"]
+    exist -> db [label = "No"]
+    db -> save
+
+    login -> result
+    save -> result
+}

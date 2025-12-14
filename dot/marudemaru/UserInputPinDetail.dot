@@ -1,0 +1,22 @@
+digraph G {
+    #include "style.doth"
+
+    input[label = "投稿内容を入力"]
+    title[label = "タイトルが入力されている", shape = diamond]
+    content[label = "説明が入力されている", shape = diamond]
+    latitude[label = "緯度が入力されている", shape = diamond]
+    longitude[label = "経度が入力されている", shape = diamond]
+    no[label = "「このフィールドを入力してください」と表示"]
+    db[label = "DBにアクセス"]
+    store[label = "投稿内容を格納"]
+
+    input -> title
+    title -> content [label = "YES"]
+    title -> no [label = "NO"]
+    content -> latitude [label = "YES"]
+    content -> no [label = "NO"]
+    latitude -> longitude [label = "YES"]
+    latitude -> no [label = "NO"]
+    longitude -> db
+    db -> store
+}
