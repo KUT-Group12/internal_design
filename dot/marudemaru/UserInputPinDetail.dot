@@ -17,6 +17,7 @@ digraph G {
     content -> no [label = "NO"]
     latitude -> longitude [label = "YES"]
     latitude -> no [label = "NO"]
-    longitude -> db
+    longitude -> no [label = "NO"]
+    longitude -> db [label = "YES"]
     db -> store
 }
