@@ -8,6 +8,9 @@
 \usepackage{longtable}
 \usepackage{array}
 
+% 目次に表示する深さを\subsectionまでに変更
+\setcounter{tocdepth}{2}
+
 \begin{document}
 
 \input{sections/title}
@@ -69,17 +72,52 @@
 % M1-17-2
 \input{sections/user_front/section6_UserDeletePinScreen.tex}
 
+% M1-18-1
+\input{sections/section6_iwamura/section6_UserInputReactionInformation.tex}
+
 % M1-18-2
 \input{sections/user_front/section6_UserReactionScreen.tex}
+
+% M1-19, M1-20
+\input{sections/section6_iwamura/section6_UserGetReactionList.tex}
 
 % M1-21
 \input{sections/user_front/section6_UserMyPageScreen.tex}
 
 % 事業者側モジュール
 \subsection{事業者側モジュール}
+
 % モジュール間遷移図
 \input{sections/section6_businessmoduletrans.tex}
+% M2-1-2
+\input{sections/section6_iwamura/section6_BusinessInputInformation.tex}
 
+% M2-2-2
+\input{sections/section6_iwamura/section6_BusinessLogout.tex}
+
+% M2-3-2
+\input{sections/section6_iwamura/section6_BusinessDeleteInformation.tex}
+
+% M2-4-2, M2-5-1
+\input{sections/section6_iwamura/section6_BusinessInputContactInformation.tex}
+
+% M2-6-1
+\input{sections/section6_iwamura/section6_BusinessGetPinDetail.tex}
+
+% M2-7-3, M2-7-4, M2-7-5, M2-8, M2-9-1
+\input{sections/section6_iwamura/section6_BusinessNameSearch.tex}
+
+% M2-10-2, M2-11-1
+\input{sections/section6_iwamura/section6_BusinessInputReportInformation.tex}
+
+% M2-12-1
+\input{sections/section6_iwamura/section6_InputChangeBusinessName.tex}
+
+% M2-13-1
+\input{sections/section6_iwamura/section6_InputChangeBusinessIcon.tex}
+
+% M2-14-2
+\input{sections/section6_iwamura/section6_InputPayInformation.tex}
 % 管理者側モジュール
 \subsection{管理者側モジュール}
 % モジュール間遷移図

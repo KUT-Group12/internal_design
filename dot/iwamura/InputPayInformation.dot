@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    strip [label = "stripeから支払い情報を取得"]
+    db [label = "DBに支払い情報を格納"]
+
+    strip -> db
+}
