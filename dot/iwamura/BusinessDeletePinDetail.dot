@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    db[label = "DBから投稿内容を削除"]
+    view[label = "BusinessDeletePinScreenに移行"]
+
+    db -> view
+}

@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    input [label = "変更された事業者名をDBに格納"]
+    view [label = "ChangeBusinessNameScreenに移行"]
+
+    input -> view
+}

@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    input [label = "投稿内容を取得"]
+    db [label = "DBに投稿内容を格納"]
+
+    input -> db
+}
