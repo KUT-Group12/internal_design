@@ -1,0 +1,14 @@
+digraph G {
+    #include "style.doth"
+
+    db[label = "DBにアクセス"]
+    get[label = "マップ上の投稿数を取得"]
+    judge[label = "投稿数が50以上", shape = diamond]
+    no[label = "通常サイズでピンを表示"]
+    yes[label = "ピンを大きくして表示"]
+
+    db -> get
+    get -> judge
+    judge -> no[label = "NO"]
+    judge -> yes[label = "YES"]
+}

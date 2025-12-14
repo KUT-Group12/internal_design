@@ -1,0 +1,18 @@
+digraph G {
+    #include "style.doth"
+
+    trash[label = "ゴミ箱マークを選択"]
+    trash_display[label = "削除確認画面を表示"]
+    ok[label = "「OK」を選択", shape = diamond]
+    no[label = "UserMyPageScreenに移行"]
+    db[label = "DBにアクセス"]
+    delete[label = "投稿内容を削除"]
+    delete_display[label = "「投稿を削除しました」と表示"]
+
+    trash -> trash_display
+    trash_display -> ok
+    ok -> no [label = "NO"]
+    ok -> db [label = "YES"]
+    db -> delete
+    delete -> delete_display
+}
