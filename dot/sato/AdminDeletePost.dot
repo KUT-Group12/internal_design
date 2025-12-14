@@ -1,0 +1,9 @@
+digraph G {
+    #include "style.doth"
+
+    get[label = "削除する投稿IDを取得"]
+
+    db[label = "該当する投稿を削除"]
+    
+    get -> db
+}

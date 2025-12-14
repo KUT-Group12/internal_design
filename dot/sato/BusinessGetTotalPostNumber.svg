@@ -11,8 +11,8 @@
 <!-- db -->
 <g id="node1" class="node">
 <title>db</title>
-<polygon fill="none" stroke="black" points="174.62,-108 69.38,-108 69.38,-72 174.62,-72 174.62,-108"/>
-<text xml:space="preserve" text-anchor="middle" x="122" y="-87.2" font-family="RocknRoll One" font-size="14.00">dbにアクセス</text>
+<polygon fill="none" stroke="black" points="204.62,-108 39.38,-108 39.38,-72 204.62,-72 204.62,-108"/>
+<text xml:space="preserve" text-anchor="middle" x="122" y="-87.2" font-family="RocknRoll One" font-size="14.00">DBで投稿数をカウント</text>
 </g>
 <!-- post -->
 <g id="node2" class="node">

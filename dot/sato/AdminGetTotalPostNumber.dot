@@ -1,0 +1,7 @@
+digraph G {
+    #include "style.doth"
+    db[label = "全ての投稿数をカウント"]
+    result[label = "総投稿数を返却"]
+
+    db -> result
+}

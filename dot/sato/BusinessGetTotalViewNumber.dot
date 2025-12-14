@@ -1,7 +1,7 @@
 digraph G {
     #include "style.doth"
 
-    db[label = "dbにアクセス"]
+    db[label = "DBで事業者アカウントの全投稿の閲覧数をカウント"]
     result[label = "事業者アカウントの総閲覧数を取得"]
 
     db -> result

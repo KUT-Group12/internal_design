@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    db[label = "対応済みフラグがない通報のカウント"]
+    result[label = "未処理通報数を返却"]
+    
+    db -> result
+}

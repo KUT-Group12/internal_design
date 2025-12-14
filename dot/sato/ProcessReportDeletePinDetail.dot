@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    db[label = "対応する通報IDの対応済みフラグをTrueにする"]
+    delete[label = "該当の投稿を削除する"]
+
+    db -> delete
+}

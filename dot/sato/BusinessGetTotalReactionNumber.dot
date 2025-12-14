@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    db[label = "DBで全ての投稿についているリアクションをカウント"]
+    post[label = "総リアクション数を返却"]
+
+    db -> post
+}

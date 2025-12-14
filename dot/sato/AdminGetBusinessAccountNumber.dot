@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    db[label = "事業者アカウントをカウント"]
+    result[label = "事業者アカウント数を返却"]
+    
+    db -> result
+}

@@ -2,7 +2,7 @@ digraph G {
     #include "style.doth"
 
     info[label = "BusinessGetTotalPostNumberと\nBusinessGetTotalReactionNumberの実行"]
-    calc[label = "総リアクション数 / 総閲覧数"]
+    calc[label = "(総リアクション数 / 総閲覧数) を計算"]
 
     info -> calc
 }
