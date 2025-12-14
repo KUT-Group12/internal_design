@@ -9,5 +9,4 @@ digraph G {
     check -> message
     message -> choice
     choice -> shift
-
 }
