@@ -1,0 +1,12 @@
+digraph G {
+    #include "style.doth"
+
+    check[label = "チェックボックス3つ全てをクリック"]
+    message[label = "「本当にアカウントを削除してもよろしいですか？ \n この操作は取り消せません。」と表示する"]
+    choice[label ="「OK」を選択"]
+    shift[label = "BusinessDeleteに移行"]
+
+    check -> message
+    message -> choice
+    choice -> shift
+}
