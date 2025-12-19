@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    db[label = "DBにアクセス"]
+    input[label = "変更した画像を格納"]
+
+    db -> input
+}
