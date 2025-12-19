@@ -1,0 +1,27 @@
+digraph G {
+    #include "style.doth"
+
+    auth [label = "ログイン状態確認"]
+
+    get_user [label = "ユーザー情報取得"]
+
+    check_subscription [label = "Subscriptionの有無を確認", shape = diamond]
+
+
+    create_checkout [label = "Checkout Session 作成"]
+
+    redirect_checkout [label = "Checkout URL を取得"]
+
+    create_portal [label = "Customer Portal Session 作成"]
+
+    redirect_portal [label = "Portal URL を取得"]
+
+    auth -> get_user
+    get_user -> check_subscription
+
+    check_subscription -> create_checkout [label = "はい"]
+    create_checkout -> redirect_checkout
+
+    check_subscription -> create_portal [label = "いいえ"]
+    create_portal -> redirect_portal
+}
