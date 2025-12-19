@@ -1,0 +1,12 @@
+digraph G {
+    #include "style.doth"
+
+    select[label = "画像を選択"]
+    pre[label = "プレビューを表示", shape = diamond]
+    no[label = "変更前のアイコンに戻す"]
+    yes[label = "InputChangeBusinessIcon"]
+
+    select -> pre
+    pre -> no[label = "キャンセル"]
+    pre -> yes[label = "アイコンを保存"]
+}
