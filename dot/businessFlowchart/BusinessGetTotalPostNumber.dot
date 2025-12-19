@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    db[label = "DBにアクセス"]
+    get[label = "総投稿数を取得"]
+
+    db -> get
+}
