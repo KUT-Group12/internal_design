@@ -16,7 +16,7 @@
     \hline
         モジュールID & モジュール名 & 概要 \\ \hline
         M1-1 & LoginScreen & ログイン画面を表示 \\ \hline
-        M1-2 & FetchMemerInfo & 会員情報を取得 \\ \hline
+        M1-2 & FetchMemberInfo & 会員情報を取得 \\ \hline
         M1-3-1 & SelectLogout & ログアウトを選択 \\ \hline
         M1-3-2 & LogoutScreen & ログアウト画面を表示 \\ \hline
         M1-3-3 & Logout & ログアウトする \\ \hline
@@ -31,8 +31,7 @@
         M1-6-3 & MapViewScreen & 地図表示画面を表示 \\ \hline
         M1-7-1 & SelectPin & ピンを選択 \\ \hline
         M1-7-2 & GetPostDetail & 投稿内容を取得 \\ \hline
-        M1-7-3 & ShowPinnedPosts & ピンに投稿されている内容を表示 \\ \hline
-        M1-7-4 & DisplayPostList & 投稿閲覧画面を表示 \\ \hline
+        M1-7-3 & DisplayPostList & 投稿閲覧画面を表示 \\ \hline
         M1-8-1 & GetLocation & 位置情報を取得 \\ \hline
         M1-8-2 & NewPostScreen & 新規投稿画面を表示 \\ \hline
         M1-8-3 & GetPostTimestamp & 投稿した日時を取得 \\ \hline
@@ -41,8 +40,8 @@
         M1-9-2 & SubmitBlock & ブロック情報を格納 \\ \hline
         M1-10-1 & SelectUnlock & ブロック解除を選択 \\ \hline
         M1-10-2 & DeleteBlock & ブロック情報を削除 \\ \hline
-        M1-11-1 & UserBlockViewScreen & ブロックリストを表示 \\ \hline
-        M1-11-2 & GetBlockList & ブロックリストを表示 \\ \hline
+        M1-11-1 & GetBlockList & ブロックリストを取得 \\ \hline
+        M1-11-2 & UserBlockViewScreen & ブロックリストを表示 \\ \hline
         M1-12-1 & ReportScreen & 通報画面を表示 \\ \hline
         M1-12-2 & SubmitReport & 通報内容を格納 \\ \hline
         M1-13-1 & SelectPostDeletion & 自分の投稿の削除を選択 \\ \hline
@@ -62,23 +61,21 @@
     M2-1 & UserInputInformation & Google認証にアクセスして，DBに利用者情報を格納または，ログインをする \\ \hline
     M2-2-1 & UserSelectMyPage & マイページを選択 \\ \hline
     M2-2-2 & UserDisplayMyPage & マイページ画面を表示 \\ \hline
-    M2-3-1 & UserDeleteInformation & 会員情報を匿名化する \\ \hline
-    M2-4-1 & UserInputSearchKeyword & キーワードを入力する \\ \hline
-    M2-4-2 & SearchKeyword & キーワード検索をする \\ \hline
-    M2-4-3 & UserDisplayKeywordSearchResults & キーワード検索の結果を表示 \\ \hline
-    M2-5-1 & UserSelectSearchGenre & ジャンルを選択 \\ \hline
-    M2-5-2 & SearchGenre & ジャンル検索をする \\ \hline
-    M2-5-3 & UserDisplayGenreSearchResults & ジャンル検索結果を表示 \\ \hline
-    M2-6-1 & UserSelectSearchPeriod & 期間を選択 \\ \hline
-    M2-6-2 & SearchPeriod & 期間検索をする \\ \hline
-    M2-6-3 & UserDisplayPeriodSearchResults & 期間検索の結果を表示\\ \hline
-    M2-7 & UserDeletePinDetail & 投稿内容を匿名化 \\ \hline
-    M2-8-1 & UserTriggerReaction & リアクションボタンを押す \\ \hline
-    M2-8-2 & UserInputReactionInformation & リアクション情報を格納 \\ \hline
-    M2-9-1 & UserInputBusinessApplication & 事業者申請を入力 \\ \hline
-    M2-9-2 & InputBusinessRequestInformation & 事業者申請を格納 \\ \hline
-    M2-10-1 & UserGetReactionList & リアクション履歴を取得 \\ \hline
-    M2-10-2 & UserReactionViewScreen & リアクション履歴を表示 \\ \hline
+    M2-3-1 & UserInputSearchKeyword & キーワードを入力する \\ \hline
+    M2-3-2 & KeywordSearch & キーワード検索をする \\ \hline
+    M2-3-3 & UserDisplayKeywordSearchResults & キーワード検索の結果を表示 \\ \hline
+    M2-4-1 & UserSelectSearchGenre & ジャンルを選択 \\ \hline
+    M2-4-2 & GenreSearch & ジャンル検索をする \\ \hline
+    M2-4-3 & UserDisplayGenreSearchResults & ジャンル検索結果を表示 \\ \hline
+    M2-5-1 & UserSelectSearchPeriod & 期間を選択 \\ \hline
+    M2-5-2 & DateSearch & 期間検索をする \\ \hline
+    M2-5-3 & UserDisplayPeriodSearchResults & 期間検索の結果を表示\\ \hline
+    M2-6-1 & UserTriggerReaction & リアクションボタンを押す \\ \hline
+    M2-6-2 & UserInputReactionInformation & リアクション情報を格納 \\ \hline
+    M2-7-1 & UserInputBusinessApplication & 事業者申請を入力 \\ \hline
+    M2-7-2 & InputBusinessRequestInformation & 事業者申請を格納 \\ \hline
+    M2-8-1 & UserGetReactionList & リアクション履歴を取得 \\ \hline
+    M2-8-2 & UserReactionViewScreen & リアクション履歴を表示 \\ \hline
 \end{longtable}
 
 \begin{longtable}{|c|c|>{\hspace{0pt}\centering\arraybackslash}p{5cm}|}
@@ -92,7 +89,7 @@
     M3-2-3 & BusinessDisplayMyPage & マイページ画面を表示する \\ \hline
     M3-3 & BusinessDeleteInformation & 会員情報を削除する \\ \hline
     M3-4-1 & InputNewBusinessName & 変更する事業者名を入力する \\ \hline
-    M3-4-2 & UpdateBusinessName & 事業者名の変更を反映する \\ \hline
+    M3-4-2 & UpdateBusinessName & 変更した事業者名を格納する \\ \hline
     M3-4-3 & ChangeBusinessNameScreen & 事業者名の変更を反映する \\ \hline
     M3-5-1 & InputNewBusinessIcon & 変更する事業者アイコンを入力する \\ \hline
     M3-5-2 & UpdateBusinessIcon & 変更した事業者アイコンを格納する \\ \hline
