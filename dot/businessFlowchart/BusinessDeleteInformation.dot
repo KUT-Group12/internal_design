@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+    
+    db[label = "DBにアクセス"]
+    delete[label = "会員情報を匿名化"]
+
+    db -> delete
+}
