@@ -1,0 +1,14 @@
+digraph G {
+    #include "style.doth"
+
+    access[label = "Googel認証にアクセス"]
+    get[label = "Googleから利用者情報を取得"]
+    getsession[label = "セッションIDを発行"]
+    insession[label = "セッションIDをDB格納"]
+    login[label = "ログイン処理"]
+
+    access -> get
+    get -> getsession
+    getsession -> insession
+    insession -> login
+}
