@@ -1,0 +1,7 @@
+digraph G {
+    #include "style.doth"
+    module[label = "InputChangeBusinessIcon"]
+    view[label = "事業者アイコンを反映"]
+
+    module -> view
+}
