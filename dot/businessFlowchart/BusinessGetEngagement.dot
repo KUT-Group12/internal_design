@@ -1,0 +1,12 @@
+digraph G {
+    #include "style.doth"
+    
+    db[label = "DBにアクセス"]
+    get[label = "総リアクション数を総閲覧数を取得"]
+    comp[label = "\"総リアクション数 / 総閲覧数\"を計算"]
+    view[label = "BusinessDashboardScreen"]
+
+    db -> get
+    get -> comp
+    comp -> view
+}
