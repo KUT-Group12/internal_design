@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    module[label = "InputChangeBusinessName"]
+    view[label = "事業者名を反映"]
+
+    module -> view
+}
