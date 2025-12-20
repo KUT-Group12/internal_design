@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    create[label = "週間推移のグラフを作成"]
+    screen[label = "週間推移のグラフを表示"]
+
+    create -> screen
+}
