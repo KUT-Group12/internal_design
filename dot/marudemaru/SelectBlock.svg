@@ -19,7 +19,7 @@
 <title>view</title>
 <polygon fill="none" stroke="black" points="458,-175 0,-131 458,-87 916,-131 458,-175"/>
 <text text-anchor="middle" x="458" y="-134.8" font-family="RocknRoll One" font-size="14.00">「このユーザーをブロックしますか？</text>
-<text text-anchor="middle" x="458" y="-119.8" font-family="RocknRoll One" font-size="14.00">ブロックすると相手の投稿が表示さえなくなります。」を表示</text>
+<text text-anchor="middle" x="458" y="-119.8" font-family="RocknRoll One" font-size="14.00">ブロックすると相手の投稿が表示されなくなります。」を表示</text>
 </g>
 <!-- select&#45;&gt;view -->
 <g id="edge1" class="edge">
