@@ -1,8 +1,0 @@
-digraph G {
-    #include "style.doth"
-
-    db[label = "DBにアクセス"]
-    get[label = "投稿した日時を取得"]
-
-    db -> get
-}
