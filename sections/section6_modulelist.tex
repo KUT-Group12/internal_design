@@ -1,4 +1,4 @@
-本システムのモジュール一覧を表\ref{tab:commonmodule}から\ref{tab:adminmodule}に示す．モジュールIDはM(共通:1，利用者:12事業者:3，管理者:4)-(各機能の番号)-(もし，同じ機能で分けられているモジュールがあるならば，仕様順番の番号)となっている．
+本システムのモジュール一覧を表\ref{tab:commonmodule}から\ref{tab:adminmodule}に示す．モジュールIDはM(共通:1，利用者:2，事業者:3，管理者:4)-(各機能の番号)-(もし，同じ機能で分けられているモジュールがあるならば，仕様順番の番号)となっている．
 
 \begin{longtable}{|c|c|>{\hspace{0pt}\centering\arraybackslash}p{5cm}|}
     \caption{共通モジュール一覧}
@@ -15,8 +15,8 @@
     
     \hline
         モジュールID & モジュール名 & 概要 \\ \hline
-        M1-1 & LoginScreen & ログイン画面を表示 \\ \hline
-        M1-2 & FetchMemberInfo & 会員情報を取得 \\ \hline
+        M1-1 & LoginScreen & ログイン画面を表示する \\ \hline
+        M1-2 & FetchMemberInfo & 会員情報を取得する \\ \hline
         M1-3-1 & SelectLogout & ログアウトを選択 \\ \hline
         M1-3-2 & LogoutScreen & ログアウト画面を表示 \\ \hline
         M1-3-3 & Logout & ログアウトする \\ \hline
@@ -50,7 +50,7 @@
         M1-14-2 & GetPostHistory & 投稿履歴を取得 \\ \hline
         M1-14-3 & DisplayPostHistory & 投稿履歴を表示 \\ \hline
         M1-15-1 & SelectUserSetting & 設定を選択 \\ \hline
-        M1-15-2 & DisplayUserSetteing & 設定を表示 \\ \hline
+        M1-15-2 & DisplayUserSetting & 設定を表示 \\ \hline
 \end{longtable}
 
 \begin{longtable}{|c|c|>{\hspace{0pt}\centering\arraybackslash}p{5cm}|}
@@ -63,13 +63,13 @@
     M2-2-2 & UserDisplayMyPage & マイページ画面を表示 \\ \hline
     M2-3-1 & UserInputSearchKeyword & キーワードを入力する \\ \hline
     M2-3-2 & KeywordSearch & キーワード検索をする \\ \hline
-    M2-3-3 & UserDisplayKeywordSearchResults & キーワード検索の結果を表示 \\ \hline
+    M2-3-3 & UserDisplayKeywordSearchResults & キーワード検索結果を表示 \\ \hline
     M2-4-1 & UserSelectSearchGenre & ジャンルを選択 \\ \hline
     M2-4-2 & GenreSearch & ジャンル検索をする \\ \hline
     M2-4-3 & UserDisplayGenreSearchResults & ジャンル検索結果を表示 \\ \hline
     M2-5-1 & UserSelectSearchPeriod & 期間を選択 \\ \hline
     M2-5-2 & DateSearch & 期間検索をする \\ \hline
-    M2-5-3 & UserDisplayPeriodSearchResults & 期間検索の結果を表示\\ \hline
+    M2-5-3 & UserDisplayPeriodSearchResults & 期間検索結果を表示\\ \hline
     M2-6-1 & UserTriggerReaction & リアクションボタンを押す \\ \hline
     M2-6-2 & UserInputReactionInformation & リアクション情報を格納 \\ \hline
     M2-7-1 & UserInputBusinessApplication & 事業者申請を入力 \\ \hline
