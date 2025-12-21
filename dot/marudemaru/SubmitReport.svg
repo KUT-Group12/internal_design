@@ -14,15 +14,15 @@
 <polygon fill="none" stroke="black" points="111.5,-108 4.5,-108 4.5,-72 111.5,-72 111.5,-108"/>
 <text text-anchor="middle" x="58" y="-86.3" font-family="RocknRoll One" font-size="14.00">DBにアクセス</text>
 </g>
-<!-- get -->
+<!-- store -->
 <g id="node2" class="node">
-<title>get</title>
+<title>store</title>
 <polygon fill="none" stroke="black" points="116,-36 0,-36 0,0 116,0 116,-36"/>
-<text text-anchor="middle" x="58" y="-14.3" font-family="RocknRoll One" font-size="14.00">選択された期間</text>
+<text text-anchor="middle" x="58" y="-14.3" font-family="RocknRoll One" font-size="14.00">通報内容を格納</text>
 </g>
-<!-- db&#45;&gt;get -->
+<!-- db&#45;&gt;store -->
 <g id="edge1" class="edge">
-<title>db&#45;&gt;get</title>
+<title>db&#45;&gt;store</title>
 <path fill="none" stroke="black" d="M58,-71.7C58,-63.98 58,-54.71 58,-46.11"/>
 <polygon fill="black" stroke="black" points="61.5,-46.1 58,-36.1 54.5,-46.1 61.5,-46.1"/>
 </g>

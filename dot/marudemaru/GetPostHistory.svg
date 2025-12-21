@@ -18,7 +18,7 @@
 <g id="node2" class="node">
 <title>get</title>
 <polygon fill="none" stroke="black" points="116,-36 0,-36 0,0 116,0 116,-36"/>
-<text text-anchor="middle" x="58" y="-14.3" font-family="RocknRoll One" font-size="14.00">選択された期間</text>
+<text text-anchor="middle" x="58" y="-14.3" font-family="RocknRoll One" font-size="14.00">投稿履歴を取得</text>
 </g>
 <!-- db&#45;&gt;get -->
 <g id="edge1" class="edge">
