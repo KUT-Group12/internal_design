@@ -4,7 +4,7 @@
 
 \begin{figure}[H]
     \centering
-    \includesvg[inkscapelatex=false, width=\linewidth]{figures/section7_database.svg}
+    \includesvg[inkscapelatex=false, width=0.8\linewidth]{figures/section7_database.svg}
     \caption{ER図}
     \label{fig:sec7er}
 \end{figure}
@@ -18,9 +18,22 @@
     \label{tb:user}
     \begin{tabular}{|c|c|c|c|c|c|} \hline
         カラム名 & PK & FK & その他の制約 & 論理データ型 & 説明 \\ \hline\hline
-        id & ○ & & not null & VARCHAR(50) & Google ID \\ \hline
+        googleId & ○ & & not null & VARCHAR(50) & Google ID \\ \hline
         gmail & & & not null & VARCHAR(100) & メールアドレス \\ \hline
         role & & & not null & ENUM('user','business','admin') & 会員区分 \\ \hline
+        registrationDate & & & not null & DATETIME & 登録日 \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \caption{セッション情報}
+    \label{tb:session}
+    \begin{tabular}{|c|c|c|c|c|c|} \hline
+        カラム名 & PK & FK & その他の制約 & 論理データ型 & 説明 \\ \hline\hline
+        sessionId & ○ & & not null & VARCHAR(255) & セッションID \\ \hline
+        googleId & & ○ & not null & VARCHAR(50) & Google ID \\ \hline
+        expiry & & & not null & DATETIME & 有効期限 \\ \hline
     \end{tabular}
 \end{table}
 
@@ -30,7 +43,7 @@
     \label{tb:business}
     \begin{tabular}{|c|c|c|c|c|c|} \hline
         カラム名 & PK & FK & その他の制約 & 論理データ型 & 説明 \\ \hline\hline
-        id & ○ & & not null & INT & ID \\ \hline
+        businessId & ○ & & not null & INT & 事業者ID \\ \hline
         businessName & & & not null & VARCHAR(50) & 事業者名 \\ \hline
         kanaBusinessName & & & not null & VARCHAR(50) & カナ事業者名 \\ \hline
         zipCode & & & not null & INT & 郵便番号 \\ \hline
@@ -45,25 +58,11 @@
 
 \begin{table}[H]
     \centering
-    \caption{支払い情報}
-    \label{tb:pay}
-    \begin{tabular}{|c|c|c|c|c|c|} \hline
-        カラム名 & PK & FK & その他の制約 & 論理データ型 & 説明 \\ \hline\hline
-        id & ○ & & not null & INT & ID \\ \hline
-        businessId & & ○ & not null & INT & 事業者ID \\ \hline
-        payAmount & & & not null & INT & 支払額 \\ \hline
-        date & & & not null & DATETIME & 支払日 \\ \hline
-        payFlag & & & not null & BOOLEAN & 支払いフラグ \\ \hline
-    \end{tabular}
-\end{table}
-
-\begin{table}[H]
-    \centering
     \caption{ブロック情報}
     \label{tb:block}
     \begin{tabular}{|c|c|c|c|c|c|} \hline
         カラム名 & PK & FK & その他の制約 & 論理データ型 & 説明 \\ \hline\hline
-        id & ○ & & not null & INT & ID \\ \hline
+        blockId & ○ & & not null & INT & ブロックID \\ \hline
         blockerId & & ○ & not null & VARCHAR(50) & ブロックしたユーザーのGoogle ID \\ \hline
         blockedId & & ○ & not null & VARCHAR(50) & ブロックされたユーザーのGoogle ID \\ \hline
     \end{tabular}
@@ -75,7 +74,7 @@
     \label{tb:ask}
     \begin{tabular}{|c|c|c|c|c|c|} \hline
         カラム名 & PK & FK & その他の制約 & 論理データ型 & 説明 \\ \hline\hline
-        id & ○ & & not null & INT & ID \\ \hline
+        askId & ○ & & not null & INT & 問い合わせID \\ \hline
         date & & & not null & DATETIME & 問い合わせ日時 \\ \hline
         subject & & & not null & VARCHAR(100) & 件名 \\ \hline
         text & & & not null & TEXT & 本文 \\ \hline
@@ -90,14 +89,16 @@
     \label{tb:post}
     \begin{tabular}{|c|c|c|c|c|c|} \hline
         カラム名 & PK & FK & その他の制約 & 論理データ型 & 説明 \\ \hline\hline
-        id & ○ & & not null & INT & ID \\ \hline
+        postId & ○ & & not null & INT & 投稿ID \\ \hline
         placeId & & ○ & not null & INT & 場所ID \\ \hline
         userId & & ○ & not null & VARCHAR(50) & 投稿者ID \\ \hline
         postDate & & & not null & DATETIME & 投稿日時 \\ \hline
+        title & & & not null & VARCHAR(50) & 投稿のタイトル \\ \hline
         text & & & not null & TEXT & 投稿の説明文 \\ \hline
         postImage & & & & BLOB & 投稿画像 \\ \hline
         numReaction & & & not null & INT & リアクション数 \\ \hline
         numView & & & not null & INT & 閲覧数 \\ \hline
+        genreId & & ○ & not null & INT & ジャンルID \\ \hline
     \end{tabular}
 \end{table}
 
@@ -108,7 +109,6 @@
     \begin{tabular}{|c|c|c|c|c|c|} \hline
         カラム名 & PK & FK & その他の制約 & 論理データ型 & 説明 \\ \hline\hline
         placeId & ○ & & not null & INT & 場所ID \\ \hline
-        postId & ○ & ○ & not null & INT & 投稿ID \\ \hline
         numPost & & & not null & INT & 投稿数 \\ \hline
         latitude & & & not null & DOUBLE & 緯度 \\ \hline
         longitude & & & not null & DOUBLE & 経度 \\ \hline
@@ -122,7 +122,6 @@
     \begin{tabular}{|c|c|c|c|c|c|} \hline
         カラム名 & PK & FK & その他の制約 & 論理データ型 & 説明 \\ \hline\hline
         genreId & ○ & & not null & INT & ジャンルID \\ \hline
-        postId & ○ & ○ & not null & INT & 投稿ID \\ \hline
         genreName & & & not null & 
         \begin{tabular}{c}
             ENUM('food', 'event', 'scene', \\'store', 'emergency', 'other')
@@ -138,7 +137,7 @@
     \label{tb:report}
     \begin{tabular}{|c|c|c|c|c|c|} \hline
         カラム名 & PK & FK & その他の制約 & 論理データ型 & 説明 \\ \hline\hline
-        id & ○ & & not null & INT & ID \\ \hline
+        reportId & ○ & & not null & INT & 通報ID \\ \hline
         userId & & ○ & not null & VARCHAR(50) & 通報したユーザーのGoogle ID \\ \hline
         postId & & ○ & not null & INT & 対象投稿ID \\ \hline
         reason & & & not null & TEXT & 通報理由 \\ \hline
@@ -154,7 +153,7 @@
     \label{tb:businessReq}
     \begin{tabular}{|c|c|c|c|c|c|} \hline
         カラム名 & PK & FK & その他の制約 & 論理データ型 & 説明 \\ \hline\hline
-        id & ○ & & not null & INT & ID \\ \hline
+        requestId & ○ & & not null & INT & 事業者申請ID \\ \hline
         name & & & not null & VARCHAR(50) & 事業者名 \\ \hline
         address & & & not null & VARCHAR(100) & 住所 \\ \hline
         phone & & & not null & INT & 電話番号 \\ \hline
@@ -168,8 +167,8 @@
     \label{tb:reaction}
     \begin{tabular}{|c|c|c|c|c|c|} \hline
         カラム名 & PK & FK & その他の制約 & 論理データ型 & 説明 \\ \hline\hline
-        id & ○ & & not null & INT & ID \\ \hline
-        userId & ○ & ○ & not null & VARCHAR(50) & リアクションをしたユーザーのGoogle ID \\ \hline
+        reactionId & ○ & & not null & INT & リアクションID \\ \hline
+        userId & & ○ & not null & VARCHAR(50) & リアクションをしたユーザーのGoogle ID \\ \hline
         postId & & ○ & not null & INT & 投稿ID \\ \hline
     \end{tabular}
 \end{table}
