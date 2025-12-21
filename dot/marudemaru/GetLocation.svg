@@ -17,8 +17,8 @@
 <!-- move -->
 <g id="node2" class="node">
 <title>move</title>
-<polygon fill="none" stroke="black" points="155,-36 60,-36 60,0 155,0 155,-36"/>
-<text text-anchor="middle" x="107.5" y="-14.3" font-family="RocknRoll One" font-size="14.00">move</text>
+<polygon fill="none" stroke="black" points="209.5,-36 5.5,-36 5.5,0 209.5,0 209.5,-36"/>
+<text text-anchor="middle" x="107.5" y="-14.3" font-family="RocknRoll One" font-size="14.00">NewPostScreenに移行</text>
 </g>
 <!-- select&#45;&gt;move -->
 <g id="edge1" class="edge">

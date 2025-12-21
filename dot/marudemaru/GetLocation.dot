@@ -2,7 +2,7 @@ digraph G {
     #include "style.doth"
 
     select[label = "投稿する位置情報を指定"]
-    move{label = "NewPostScreenに移行"}
+    move[label = "NewPostScreenに移行"]
 
     select -> move
 }
