@@ -6,8 +6,8 @@ digraph G {
     no[label="「削除できませんでした」と表示"]
     update[label="ユーザー管理画面を更新"]
 
-    check -> yes[labe="Yes"]
-    check -> no[labe="No"]
+    check -> yes[label="Yes"]
+    check -> no[label="No"]
     yes -> update
     no -> update
 }

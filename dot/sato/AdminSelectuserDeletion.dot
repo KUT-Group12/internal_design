@@ -1,7 +1,7 @@
 digraph G {
     #include "style.doth"
 
-    push[labe="ユーザーの削除ボタンを押す"]
+    push[label="ユーザーの削除ボタンを押す"]
     get[label="削除するユーザーのUserIDを取得"]
     move[label="AdminDeleteAccountに移行"]
 

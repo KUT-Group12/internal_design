@@ -11,8 +11,8 @@
 <!-- push -->
 <g id="node1" class="node">
 <title>push</title>
-<polygon fill="none" stroke="black" points="144.88,-180 90.88,-180 90.88,-144 144.88,-144 144.88,-180"/>
-<text xml:space="preserve" text-anchor="middle" x="117.88" y="-159.2" font-family="RocknRoll One" font-size="14.00">push</text>
+<polygon fill="none" stroke="black" points="218.5,-180 17.25,-180 17.25,-144 218.5,-144 218.5,-180"/>
+<text xml:space="preserve" text-anchor="middle" x="117.88" y="-159.2" font-family="RocknRoll One" font-size="14.00">ユーザーの削除ボタンを押す</text>
 </g>
 <!-- get -->
 <g id="node2" class="node">
