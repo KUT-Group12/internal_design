@@ -4,7 +4,7 @@ digraph G {
     branch[label = "ログアウトを選択", shape = diamond]
     no[label = "ログアウト画面へ遷移する前の画面へ遷移"]
     yes[label = "セッション情報の無効化"]
-    login[label = "AdminLoginScreenに移行"]
+    login[label = "LoginScreenに移行"]
 
 
     branch -> no [label = "No"]

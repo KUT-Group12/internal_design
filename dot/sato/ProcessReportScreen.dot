@@ -1,0 +1,14 @@
+digraph G {
+    #include "style.doth"
+    do[label = "通報された投稿を削除した", shape=diamond]
+    yes[label = "「投稿を削除しました」と表示"]
+    no[label = "「通報を処理しました」と表示"]
+    report[label = "対応した通報を処理済みにする"]
+    change[label = "未対応の通報が上に来るように通報管理リストを並び替える"]
+
+    do -> yes[label = "Yes"]
+    do -> no[label = "No"]
+    yes -> report
+    no -> report
+    report -> change
+}

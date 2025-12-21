@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    get[label = "該当の問い合わせIDを取得"]
+    flag[label = "該当の問い合わせIDの対応済みフラグをTrueにする"]
+
+    get -> flag
+}

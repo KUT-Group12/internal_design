@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    get[label = "Google認証にアクセス"]
+    google[label = "Googleから利用者情報を取得"]
+
+    get -> google
+}

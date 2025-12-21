@@ -1,0 +1,7 @@
+digraph G {
+    #include "style.doth"
+    db[label = "1週間以内に活動をしたアカウント数をカウント"]
+    result[label = "アクティブユーザー数を返却"]
+
+    db -> result
+}

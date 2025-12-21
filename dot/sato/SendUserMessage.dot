@@ -1,8 +1,8 @@
 digraph G {
     #include "style.doth"
 
-    get[label = "該当の会員IDと送るメッセージを取得"]
-    send[label = "該当のユーザーに通知を送信"]
-    
-    get -> send
+    db[label="DBから該当するユーザのメールアドレスを取得"]
+    send[label="メールアドレスに対してメールを送信"]
+
+    db -> send
 }

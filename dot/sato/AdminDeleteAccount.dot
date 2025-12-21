@@ -1,0 +1,7 @@
+digraph G {
+    #include "style.doth"
+
+    db[label="DBから該当するユーザーを匿名化処理"]
+
+    db
+}

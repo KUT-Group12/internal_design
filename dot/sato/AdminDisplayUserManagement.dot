@@ -1,0 +1,7 @@
+digraph G {
+    #include "style.doth"
+
+    view[label="ユーザー管理画面を表示する"]
+
+    view
+}

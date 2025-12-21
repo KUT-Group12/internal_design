@@ -1,0 +1,13 @@
+digraph G {
+    #include "style.doth"
+
+    check[label="申請が承認か却下か",shape=diamond]
+    yes[label="「承認しました」とメッセージを表示する"]
+    no[label="「却下しました」とメッセージを表示する"]
+    reflect[label="該当の申請IDを申請一覧から除外する"]
+
+    check -> yes[label="承認"]
+    check -> no[label="却下"]
+    yes -> reflect
+    no -> reflect
+}

@@ -1,0 +1,7 @@
+digraph G {
+    #include "style.doth"
+    get[label = "DBから通報内容を全て取得"]
+    result[label = "通報内容を返す"]
+
+    list -> result
+}

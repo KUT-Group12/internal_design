@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    db[label="DBからお問い合わせ情報を全て取得"]
+    result[label="お問い合わせ情報を返却"]
+
+    db -> result
+}

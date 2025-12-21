@@ -1,0 +1,7 @@
+digraph G {
+    #include "style.doth"
+    display[label = "総ユーザ数，アクティブユーザ数，総投稿数，総リアクション数，事業者アカウント数，未処理通報数を表示"]
+    result[label = "総投稿数を返却"]
+
+    display -> result
+}
