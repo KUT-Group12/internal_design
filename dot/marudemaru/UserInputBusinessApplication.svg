@@ -18,7 +18,7 @@
 <g id="node2" class="node">
 <title>nostore</title>
 <polygon fill="none" stroke="black" points="279.5,-243 106.5,-243 106.5,-207 279.5,-207 279.5,-243"/>
-<text text-anchor="middle" x="193" y="-221.3" font-family="RocknRoll One" font-size="14.00">エラー画面を表示</text>
+<text text-anchor="middle" x="193" y="-221.3" font-family="RocknRoll One" font-size="14.00">メッセージを表示</text>
 </g>
 <!-- store&#45;&gt;nostore -->
 <g id="edge1" class="edge">
@@ -44,7 +44,7 @@
 <g id="node4" class="node">
 <title>nophone</title>
 <polygon fill="none" stroke="black" points="526.5,-134 353.5,-134 353.5,-98 526.5,-98 526.5,-134"/>
-<text text-anchor="middle" x="440" y="-112.3" font-family="RocknRoll One" font-size="14.00">エラー画面を表示</text>
+<text text-anchor="middle" x="440" y="-112.3" font-family="RocknRoll One" font-size="14.00">メッセージを表示</text>
 </g>
 <!-- phone&#45;&gt;nophone -->
 <g id="edge3" class="edge">
@@ -70,7 +70,7 @@
 <g id="node6" class="node">
 <title>noaddress</title>
 <polygon fill="none" stroke="black" points="697.5,-36 524.5,-36 524.5,0 697.5,0 697.5,-36"/>
-<text text-anchor="middle" x="611" y="-14.3" font-family="RocknRoll One" font-size="14.00">エラー画面を表示</text>
+<text text-anchor="middle" x="611" y="-14.3" font-family="RocknRoll One" font-size="14.00">メッセージを表示</text>
 </g>
 <!-- address&#45;&gt;noaddress -->
 <g id="edge5" class="edge">

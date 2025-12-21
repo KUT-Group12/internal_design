@@ -7,7 +7,7 @@ digraph G {
     login[label = "LoginScreenに移行"]
 
 
-    branch -> no [label = "No"]
-    branch -> yes [label = "Yes"]
+    branch -> no [label = "キャンセル"]
+    branch -> yes [label = "ログアウト"]
     yes -> login
 }

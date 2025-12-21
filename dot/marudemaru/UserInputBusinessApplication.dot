@@ -2,11 +2,11 @@ digraph G {
     #include "style.doth"
 
     store[label = "店舗名が入力されている", shape = diamond]
-    nostore[label = "エラー画面を表示"]
+    nostore[label = "メッセージを表示"]
     phone[label = "電話番号が入力されている", shape = diamond]
-    nophone[label = "エラー画面を表示"]
+    nophone[label = "メッセージを表示"]
     address[label = "住所が入力されている", shape = diamond]
-    noaddress[label = "エラー画面を表示"]
+    noaddress[label = "メッセージを表示"]
     move[label = "InputBusinessRequestInformationに移行"]
 
     store -> nostore[label = "NO"]

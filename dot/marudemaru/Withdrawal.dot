@@ -6,7 +6,7 @@ digraph G {
     confirmation_yes[label = "DBに会員情報をデタラメな値で上書きする"]
     login[label = "LoginScreenに移行"]
 
-    ok -> confirmation_no[label = "NO"]
-    ok -> confirmation_yes[label = "YES"]
+    ok -> confirmation_no[label = "キャンセル"]
+    ok -> confirmation_yes[label = "退会"]
     confirmation_yes -> login
 }

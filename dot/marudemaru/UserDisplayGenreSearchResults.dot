@@ -2,7 +2,7 @@ digraph G {
     #include "style.doth"
 
     move[label = "GenreSearch"]
-    view[label = "選択したジャンルの投稿とピンのみを表示"]
+    view[label = "選択したジャンルのピンのみを表示"]
 
     move -> view
 }

@@ -17,6 +17,6 @@ digraph G {
     content -> latitude [label = "YES"]
     latitude -> nolatitude [label = "NO"]
     latitude -> longitude [label = "YES"]
-    latitude -> nolongitude [label = "NO"]
+    longitude -> nolongitude [label = "NO"]
     longitude -> move [label = "YES"]
 }

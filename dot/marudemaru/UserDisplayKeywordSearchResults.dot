@@ -2,7 +2,7 @@ digraph G {
     #include "style.doth"
 
     move[label = "KeywordSearch"]
-    view[label = "選択したキーワードの投稿とピンのみを表示"]
+    view[label = "選択したキーワードのピンのみを表示"]
 
     move -> view
 }

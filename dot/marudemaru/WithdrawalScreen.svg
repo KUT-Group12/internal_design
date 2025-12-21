@@ -17,8 +17,8 @@
 <!-- click -->
 <g id="node2" class="node">
 <title>click</title>
-<polygon fill="none" stroke="black" points="469,-252 188,-252 188,-216 469,-216 469,-252"/>
-<text text-anchor="middle" x="328.5" y="-230.3" font-family="RocknRoll One" font-size="14.00">チェックボックス3つ全てクリック</text>
+<polygon fill="none" stroke="black" points="454.5,-252 202.5,-252 202.5,-216 454.5,-216 454.5,-252"/>
+<text text-anchor="middle" x="328.5" y="-230.3" font-family="RocknRoll One" font-size="14.00">チェックボックス3つ全て選択</text>
 </g>
 <!-- screen&#45;&gt;click -->
 <g id="edge1" class="edge">

@@ -2,7 +2,7 @@ digraph G {
     #include "style.doth"
 
     move[label = "DateSearch"]
-    view[label = "選択した期間の投稿とピンのみを表示"]
+    view[label = "選択した期間のピンのみを表示"]
 
     move -> view
 }
