@@ -1,0 +1,12 @@
+digraph G {
+    #include "style.doth"
+
+    edit[label = "編集ボタンを選択"]
+    input[label = "変更する事業者名の入力の受付", shape = diamond]
+    not[label = "変更前の事業者名に戻す"]
+    store[label = "InputChangeBusinessName"]
+
+    edit -> input
+    input -> not[label = "キャンセル"]
+    input -> store[label = "保存"]
+}

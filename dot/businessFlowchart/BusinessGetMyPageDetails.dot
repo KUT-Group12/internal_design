@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    access[label = "DBにアクセス"]
+    db[label = "事業者会員情報を取得"]
+
+    access -> db
+}

@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    get[label = "リアクション数が多い投稿5つを取得"]
+    screen[label = "リアクション数が多い投稿5つを表示"]
+
+    get -> screen
+}

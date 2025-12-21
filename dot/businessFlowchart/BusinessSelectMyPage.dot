@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    select[label = "マイページ画面の選択"]
+    move[label = "マイページ画面出力のためのモジュールへ移行"]
+
+    select -> move
+}
