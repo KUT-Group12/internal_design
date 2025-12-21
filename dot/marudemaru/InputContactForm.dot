@@ -1,0 +1,14 @@
+digraph G {
+    #include "style.doth"
+
+    title[label = "件名が入力されている", shape = diamond]
+    notitle[label = "メッセージを出力"]
+    message[label = "メッセージが入力されている", shape = diamond]
+    nomessage[label = "メッセージを出力"]
+    move[label = "SubmitContactに移行"]
+
+    title -> notitle [label = "NO"]
+    title -> message [label = "YES"]
+    message -> nomessage [label = "NO"]
+    message -> move [label = "YES"]
+}

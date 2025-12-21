@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    select[label = "UserBlockViewScreen"]
+    view[label = "設定を表示"]
+
+    select -> view
+}

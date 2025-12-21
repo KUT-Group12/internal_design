@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    db[label = "DBにアクセス"]
+    store[label = "ブロック情報の格納"]
+
+    db -> store
+}

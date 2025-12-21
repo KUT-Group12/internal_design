@@ -1,0 +1,12 @@
+digraph G {
+    #include "style.doth"
+
+    select[label = "ゴミ箱マークを選択"]
+    delete[label = "削除確認画面を表示", shape = diamond]
+    no[label = "UserDisplayMyPageに移行"]
+    yes[label = "AnonymizePostDetailに移行"]
+
+    select -> delete
+    delete -> no [label = "キャンセル"]
+    delete -> yes [label = "OK"]
+}

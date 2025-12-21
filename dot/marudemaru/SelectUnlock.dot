@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    select[label = "「ブロック解除」を選択"]
+    move[label = "DeleteBlockに移行"]
+
+    select -> move
+}

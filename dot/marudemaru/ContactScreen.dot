@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    screen[label = "問い合わせ画面の表示"]
+    move[label = "InputContactFormに移行"]
+
+    screen -> move
+}

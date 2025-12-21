@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    move[label = "GenreSearch"]
+    view[label = "選択したジャンルのピンのみを表示"]
+
+    move -> view
+}

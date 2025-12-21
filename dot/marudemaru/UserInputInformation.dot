@@ -3,18 +3,18 @@ digraph G {
 
     auth[label = "Google認証にアクセス"]
     info[label = "Googelから利用者情報を取得"]
+    login[label = "セッションIDを発行"]
     exist[label = "DBにユーザーが存在するか", shape = diamond]
-    login[label = "ログイン処理"]
-    db[label = "DBにアクセス"]
-    save[label = "利用者情報を格納"]
+    new_save[label = "DBに利用者情報とセッションIDを格納"]
+    save[label = "DBにセッションIDを格納"]
     result[label = "UserMapViewScreenに移行"]
 
     auth -> info
-    info -> exist
-    exist -> login [label = "Yes"]
-    exist -> db [label = "No"]
-    db -> save
+    info -> login
+    login -> exist
+    exist -> save [label = "Yes"]
+    exist -> new_save [label = "No"]
 
-    login -> result
     save -> result
+    new_save -> result
 }

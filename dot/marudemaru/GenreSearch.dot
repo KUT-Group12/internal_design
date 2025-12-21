@@ -1,12 +1,8 @@
 digraph G {
     #include "style.doth"
 
-    serect[label = "ジャンルを選択"]
     db[label = "DBにアクセス"]
     get[label = "選択されたジャンルの投稿を取得"]
-    output[label = "選択したジャンルの投稿とピンのみを表示"]
 
-    serect -> db
     db -> get
-    get -> output
 }

@@ -1,0 +1,12 @@
+digraph G {
+    #include "style.doth"
+
+    select[label = "「ブロック」を選択する"]
+    view[label = "「このユーザーをブロックしますか？\nブロックすると相手の投稿が表示されなくなります。」を表示", shape = diamond]
+    yes[label = "SubmitBlockに移行"]
+    no[label = "DisplayPostListに移行"]
+
+    select -> view
+    view -> yes [label = "OK"]
+    view -> no [label = "キャンセル"]
+}

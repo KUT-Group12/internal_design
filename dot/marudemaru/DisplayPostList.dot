@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    move[label = "GetPostDetail"]
+    screen[label = "投稿閲覧画面を表示"]
+
+    move -> screen
+}

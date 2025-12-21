@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    move[label = "CheckPostCountThreshold"]
+    screen[label = "地図表示画面を表示"]
+
+    move -> screen
+}

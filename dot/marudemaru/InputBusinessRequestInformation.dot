@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    db[label = "DBにアクセス"]
+    store[label = "事業者申請情報を格納"]
+
+    db -> store
+}

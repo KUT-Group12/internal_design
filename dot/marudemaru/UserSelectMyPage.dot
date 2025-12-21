@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    select[label = "マイページを選択"]
+    move[label = "UserGetMyPageDetailsに移行"]
+
+    select -> move
+}

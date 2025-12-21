@@ -1,0 +1,10 @@
+digraph G {
+    #include "style.doth"
+
+    screen[label = "ログアウト画面の表示"]
+    select[label = "「ログアウトする」を選択"]
+    move[label = "Logoutに移行"]
+
+    screen -> select
+    select -> move
+}

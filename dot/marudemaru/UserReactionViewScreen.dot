@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    move[label = "UserGetReactionList"]
+    view[label = "リアクション履歴画面を表示"]
+
+    move -> view
+}

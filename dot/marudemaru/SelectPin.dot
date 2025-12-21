@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    select[label = "ピンを選択"]
+    move[label = "GetPostDetailに移行"]
+
+    select -> move
+}

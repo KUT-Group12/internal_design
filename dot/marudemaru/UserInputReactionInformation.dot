@@ -1,0 +1,14 @@
+digraph G {
+    #include "style.doth"
+
+    db[label = "DBにアクセス"]
+    post[label = "リアクションされた投稿のリアクション数を取得"]
+    judge[label = "すでにリアクションをしている場合", shape = diamond]
+    add[label = "リアクション数に+1をし，再び格納"]
+    diff[label = "リアクション数に-1をし，再び格納"]
+
+    db -> post
+    post -> judge
+    judge -> add [label = "NO"]
+    judge -> diff [label = "YES"]
+}

@@ -1,0 +1,22 @@
+digraph G {
+    #include "style.doth"
+
+    title[label = "タイトルを入力されている"]
+    notitle[label = "メッセージを出力"]
+    content[label = "説明が入力されている"]
+    nocontent[label = "メッセージを出力"]
+    latitude[label = "緯度が入力されている"]
+    nolatitude[label = "メッセージを出力"]
+    longitude[label = "経度が入力されている"]
+    nolongitude[label = "メッセージを出力"]
+    move[label = "GetPostTimestampに移行"]
+
+    title -> notitle [label = "NO"]
+    title -> content [label = "YES"]
+    content -> nocontent [label = "NO"]
+    content -> latitude [label = "YES"]
+    latitude -> nolatitude [label = "NO"]
+    latitude -> longitude [label = "YES"]
+    longitude -> nolongitude [label = "NO"]
+    longitude -> move [label = "YES"]
+}

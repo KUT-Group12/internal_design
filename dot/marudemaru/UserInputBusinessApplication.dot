@@ -1,0 +1,18 @@
+digraph G {
+    #include "style.doth"
+
+    store[label = "店舗名が入力されている", shape = diamond]
+    nostore[label = "メッセージを表示"]
+    phone[label = "電話番号が入力されている", shape = diamond]
+    nophone[label = "メッセージを表示"]
+    address[label = "住所が入力されている", shape = diamond]
+    noaddress[label = "メッセージを表示"]
+    move[label = "InputBusinessRequestInformationに移行"]
+
+    store -> nostore[label = "NO"]
+    store -> phone[label = "YES"]
+    phone -> nophone[label = "NO"]
+    phone -> address[label = "YES"]
+    address -> noaddress[label = "NO"]
+    address -> move[label = "YES"]
+}
