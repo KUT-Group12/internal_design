@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    input[label = "期間を選択"]
+    move[label = "DateSearchに移行"]
+
+    input -> move
+}

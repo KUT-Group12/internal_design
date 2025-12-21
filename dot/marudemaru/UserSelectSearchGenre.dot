@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    input[label = "ジャンルを選択"]
+    move[label = "GenreSearchに移行"]
+
+    input -> move
+}

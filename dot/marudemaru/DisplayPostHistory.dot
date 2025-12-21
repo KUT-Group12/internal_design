@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    move[label = "GetPostHistory"]
+    view[label = "自分の投稿履歴を表示"]
+
+    move -> view
+}

@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    select[label = "設定を選択"]
+    move[label = "GetBlockListに移行"]
+
+    select -> move
+}

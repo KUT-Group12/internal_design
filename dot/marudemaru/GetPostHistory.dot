@@ -2,7 +2,8 @@ digraph G {
     #include "style.doth"
 
     db[label = "DBにアクセス"]
-    get[label = "選択されたジャンルの投稿を取得"]
+    get[label = "投稿履歴を取得"]
 
     db -> get
+
 }

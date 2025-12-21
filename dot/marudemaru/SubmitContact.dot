@@ -2,7 +2,7 @@ digraph G {
     #include "style.doth"
 
     db[label = "DBにアクセス"]
-    get[label = "キーワードを含む投稿を取得"]
+    input[label = "件名・メッセージを格納"]
 
-    db -> get
+    db -> input
 }

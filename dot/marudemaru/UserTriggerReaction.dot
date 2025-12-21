@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    input[label = "リアクションボタンを押す"]
+    move[label = "UserInputReactionInformationに移行"]
+
+    input -> move
+}

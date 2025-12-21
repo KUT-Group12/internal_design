@@ -1,0 +1,14 @@
+digraph G {
+    #include "style.doth"
+
+    screen[label = "退会画面の表示"]
+    click[label = "チェックボックス3つ全てクリック"]
+    view[label = "「本当にアカウントを削除してもよろしいですか？この操作は取り消せません。」と表示する"]
+    ok[label = "「OK」を選択"]
+    move[label = "Withdrawalに移行"]
+
+    screen -> click
+    click -> view
+    view -> ok
+    ok -> move
+}

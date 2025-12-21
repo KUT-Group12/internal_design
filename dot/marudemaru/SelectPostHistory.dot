@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    select[label = "投稿履歴を選択"]
+    move[label = "GetPostHistoryに移行"]
+
+    select -> move
+}

@@ -2,7 +2,7 @@ digraph G {
     #include "style.doth"
 
     db[label = "DBにアクセス"]
-    get[label = "キーワードを含む投稿を取得"]
+    delete[label = "投稿内容を匿名化"]
 
-    db -> get
+    db -> delete
 }

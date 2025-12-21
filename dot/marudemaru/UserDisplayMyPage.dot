@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    move[label = "UserGetMyPageDetails"]
+    view[label = "マイページ画面を表示"]
+
+    move -> view
+}

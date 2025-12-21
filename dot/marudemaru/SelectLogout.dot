@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    screen[label = "ログアウトの選択"]
+    move[label = "GetMemberInfoに移行"]
+
+    screen -> move
+}

@@ -1,0 +1,14 @@
+digraph G {
+    #include "style.doth"
+
+    screen[label = "ログイン画面の表示"]
+    check[label = "利用者規約のチェックボックスにチェックを入れる"]
+    select[label = "「Googleでログイン」を選択", shape = diamond]
+    user[label = "UserInputInformationに移行"]
+    business[label = "BusinessInputInformationに移行"]
+
+    screen -> check
+    check -> select
+    select -> user [label = "一般会員"]
+    select -> business [label = "事業者会員"]
+}

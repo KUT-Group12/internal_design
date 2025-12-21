@@ -1,0 +1,10 @@
+digraph G {
+    #include "style.doth"
+
+    check[label = "通報理由が空でない", shape = diamond]
+    yes[label = "SubmitReportに移行"]
+    no[label = "メッセージを出力"]
+
+    check -> yes [label = "YES"]
+    check -> no [label = "NO"]
+}

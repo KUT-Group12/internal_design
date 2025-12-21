@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+    
+    db[label = "DBにアクセスする"]
+    delete[label = "選択したGoogle IDを削除する"]
+
+    db -> delete
+}
