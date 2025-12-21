@@ -1,0 +1,7 @@
+digraph G {
+    #include "style.doth"
+    db[label = "DBから事業者申請情報を全て取得"]
+    list[label = "取得した申請情報をリストにする"]
+
+    db -> list
+}

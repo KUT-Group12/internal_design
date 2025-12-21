@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    do[label="AdminGetContactMessagesを実行"]
+    view[label="AdminDisplayContactManagementを実行"]
+
+    do -> view
+}

@@ -1,0 +1,6 @@
+digraph G {
+    #include "style.doth"
+    do[label = "該当する申請IDのデータを匿名化する"]
+
+    do
+}

@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    access[label="登録されている全ユーザのデータを取得"]
+    result[label="取得したユーザーデータを返す"]
+
+    access -> result
+}

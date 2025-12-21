@@ -1,0 +1,7 @@
+digraph G {
+    #include "style.doth"
+
+    view[label="お問い合わせ画面を表示する"]
+
+    view
+}

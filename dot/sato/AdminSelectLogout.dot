@@ -1,0 +1,8 @@
+digraph G {
+    #include "style.doth"
+
+    button[label = "ログアウトボタンを押す"]
+    logout[label = "AdminLogoutに移行"]
+
+    button -> logout
+}

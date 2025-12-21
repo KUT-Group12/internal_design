@@ -1,8 +1,9 @@
 digraph G {
     #include "style.doth"
 
-    get[label = "該当の問い合わせIDを取得"]
-    flag[label = "該当の問い合わせIDの対応済みフラグをTrueにする"]
-
-    get -> flag
+    delete[label="通報された投稿を削除した",shape=diamond]
+    yes[label="「投稿を削除しました」と表示"]
+    no[label="「通報を処理しました」と表示"]
+    true[label="対応した通報を処理済みにする"]
+    change[label="未対応の通報が上に来るように通報管理リストを並び替える"]
 }

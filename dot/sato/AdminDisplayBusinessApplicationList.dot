@@ -1,0 +1,7 @@
+digraph G {
+    #include "style.doth"
+    do[label = "AdminGetBusinessApplicationsを実行"]
+    view[label = "事業者申請情報をリスト形式で表示する"]
+
+    do -> view
+}

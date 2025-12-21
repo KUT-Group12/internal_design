@@ -1,0 +1,7 @@
+digraph G {
+    #include "style.doth"
+    list[label = "直近1週間の新規投稿数，リアクション数をリスト化"]
+    make[label = "週間アクティビティ推移とジャンル別投稿のグラフを作成"]
+
+    list -> make
+}
